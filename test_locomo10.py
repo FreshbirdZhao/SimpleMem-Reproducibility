@@ -334,7 +334,7 @@ def calculate_sentence_similarity(prediction: str, reference: str) -> float:
 def create_judge_llm_client():
     """Create a dedicated LLM client for judge evaluation"""
     from utils.llm_client import LLMClient
-    import config
+    from simplemem.core.settings import settings as config
     
     # Use judge-specific settings, fall back to main settings if not specified
     judge_api_key = getattr(config, 'JUDGE_API_KEY', None) or config.OPENAI_API_KEY
@@ -456,7 +456,7 @@ Return ONLY the JSON, no other text.
             }
         ]
         
-        import config
+        from simplemem.core.settings import settings as config
         # Use JSON format if configured
         response_format = None
         if hasattr(config, 'USE_JSON_FORMAT') and config.USE_JSON_FORMAT:
@@ -704,7 +704,7 @@ Return ONLY the JSON, no other text.
         max_retries = 3
         for attempt in range(max_retries):
             try:
-                import config
+                from simplemem.core.settings import settings as config
                 # Use JSON format if configured
                 response_format = None
                 if hasattr(config, 'USE_JSON_FORMAT') and config.USE_JSON_FORMAT:
@@ -760,7 +760,7 @@ Return ONLY the JSON, no other text.
 
         return dialogues
 
-    def test_sample(self, sample: LoCoMoSample, sample_idx: int, enable_parallel_questions: bool = False):
+    def test_sample(self, sample: LoCoMoSample, sample_idx: int, enable_parallel_questions: bool = False, reuse_memory: bool = False):
         """Test a single sample from the dataset"""
         print(f"\n{'='*80}")
         print(f"Testing Sample {sample_idx}")
@@ -771,8 +771,11 @@ Return ONLY the JSON, no other text.
         print(f"Adding {len(dialogues)} dialogues to memory...")
 
         add_start = time.time()
-        self.system.add_dialogues(dialogues)
-        self.system.finalize()
+        if reuse_memory:
+            print("Reusing prebuilt memory; conversation ingestion skipped")
+        else:
+            self.system.add_dialogues(dialogues)
+            self.system.finalize()
         add_time = time.time() - add_start
         print(f"Memory building time: {add_time:.2f}s")
 
@@ -803,7 +806,7 @@ Return ONLY the JSON, no other text.
         
         # Use ThreadPoolExecutor for parallel question processing
         # Use explicit test_workers parameter, or config, or reasonable default
-        import config
+        from simplemem.core.settings import settings as config
         
         if self.test_workers is not None:
             max_workers = self.test_workers
@@ -942,7 +945,7 @@ Return ONLY the JSON, no other text.
             'metrics': metrics
         }
 
-    def run_test(self, num_samples: int = None, save_results: bool = True, result_file: str = 'locomo10_test_results.json', enable_parallel_questions: bool = False):
+    def run_test(self, num_samples: int = None, save_results: bool = True, result_file: str = 'locomo10_test_results.json', enable_parallel_questions: bool = False, reuse_memory: bool = False):
         """Run full test on dataset"""
         print("\n" + "="*80)
         print(" SimpleMem LoComo10 Dataset Test".center(80))
@@ -951,16 +954,21 @@ Return ONLY the JSON, no other text.
         # Load dataset
         samples = self.load_dataset(limit=num_samples)
         total_samples = len(samples)
+        if reuse_memory and total_samples != 1:
+            raise ValueError("Prebuilt memory requires exactly one conversation")
+        if reuse_memory and self.system.vector_store.backend.count() == 0:
+            raise ValueError("Prebuilt memory is empty")
 
         all_results = []
 
         # Test each sample
         for sample_idx, sample in enumerate(samples):
             # Clear system for each sample
-            self.system.vector_store.clear()
+            if not reuse_memory:
+                self.system.vector_store.clear()
 
             # Test sample
-            sample_results = self.test_sample(sample, sample_idx, enable_parallel_questions=enable_parallel_questions)
+            sample_results = self.test_sample(sample, sample_idx, enable_parallel_questions=enable_parallel_questions, reuse_memory=reuse_memory)
             all_results.extend(sample_results)
 
         # Calculate aggregate metrics
@@ -1038,6 +1046,8 @@ def main():
                        help='Number of samples to test (default: all)')
     parser.add_argument('--no-save', action='store_true',
                        help='Do not save results to file')
+    parser.add_argument('--reuse-memory', action='store_true',
+                       help='Evaluate one conversation using an existing memory database')
     parser.add_argument('--result-file', type=str, default='locomo10_test_results.json',
                        help='Path to the result file')
     parser.add_argument('--parallel-questions', action='store_true',
@@ -1051,7 +1061,7 @@ def main():
 
     # Create system
     print("Initializing SimpleMem system...")
-    system = SimpleMemSystem(clear_db=True)
+    system = SimpleMemSystem(clear_db=not args.reuse_memory)
 
     # Create tester
     tester = LoCoMoTester(system, args.dataset, use_llm_judge=args.llm_judge, test_workers=args.test_workers)
@@ -1066,7 +1076,8 @@ def main():
         num_samples=args.num_samples,
         save_results=not args.no_save,
         result_file=args.result_file,
-        enable_parallel_questions=args.parallel_questions
+        enable_parallel_questions=args.parallel_questions,
+        reuse_memory=args.reuse_memory
     )
 
 
