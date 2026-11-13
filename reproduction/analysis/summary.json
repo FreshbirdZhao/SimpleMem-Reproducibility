@@ -1,0 +1,461 @@
+{
+  "experiment_directory": "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/recovered-20261113-060600-75832",
+  "trials": [
+    {
+      "condition": "baseline",
+      "seed": 5660,
+      "semantic_top_k": 25,
+      "f1": 0.625909925466377,
+      "f1_non_adversarial": 0.5598940299604436,
+      "retrieved": 43.2,
+      "retrieval_seconds": 7.645901465415955,
+      "answer_seconds": 1.198688304424286,
+      "total_seconds": 8.84458976984024,
+      "construction_seconds": 280.48,
+      "memory_entries": 413
+    },
+    {
+      "condition": "modified",
+      "seed": 5660,
+      "semantic_top_k": 10,
+      "f1": 0.6608041001144449,
+      "f1_non_adversarial": 0.6009460001346411,
+      "retrieved": 23.2,
+      "retrieval_seconds": 7.8762790083885195,
+      "answer_seconds": 1.164736270904541,
+      "total_seconds": 9.04101527929306,
+      "construction_seconds": null,
+      "memory_entries": null
+    },
+    {
+      "condition": "baseline",
+      "seed": 5661,
+      "semantic_top_k": 25,
+      "f1": 0.6230581771170006,
+      "f1_non_adversarial": 0.5565390319023537,
+      "retrieved": 46.8,
+      "retrieval_seconds": 7.707218956947327,
+      "answer_seconds": 1.2361536383628846,
+      "total_seconds": 8.943372595310212,
+      "construction_seconds": 284.99,
+      "memory_entries": 450
+    },
+    {
+      "condition": "modified",
+      "seed": 5661,
+      "semantic_top_k": 10,
+      "f1": 0.6799313431666373,
+      "f1_non_adversarial": 0.6234486390195733,
+      "retrieved": 24.4,
+      "retrieval_seconds": 9.151042819023132,
+      "answer_seconds": 1.1269551277160645,
+      "total_seconds": 10.277997946739196,
+      "construction_seconds": null,
+      "memory_entries": null
+    },
+    {
+      "condition": "baseline",
+      "seed": 5662,
+      "semantic_top_k": 25,
+      "f1": 0.6240224909190426,
+      "f1_non_adversarial": 0.5576735187282854,
+      "retrieved": 45.1,
+      "retrieval_seconds": 6.9367904424667355,
+      "answer_seconds": 1.124472153186798,
+      "total_seconds": 8.061262595653535,
+      "construction_seconds": 261.39,
+      "memory_entries": 424
+    },
+    {
+      "condition": "modified",
+      "seed": 5662,
+      "semantic_top_k": 10,
+      "f1": 0.6074202741702742,
+      "f1_non_adversarial": 0.538141499023852,
+      "retrieved": 22.75,
+      "retrieval_seconds": 6.831875884532929,
+      "answer_seconds": 1.1007681965827942,
+      "total_seconds": 7.932644081115723,
+      "construction_seconds": null,
+      "memory_entries": null
+    }
+  ],
+  "categories": [
+    {
+      "condition": "baseline",
+      "seed": 5660,
+      "category": 1,
+      "question_count": 6,
+      "f1": 0.3181359181359181
+    },
+    {
+      "condition": "baseline",
+      "seed": 5660,
+      "category": 2,
+      "question_count": 5,
+      "f1": 0.6138888888888888
+    },
+    {
+      "condition": "baseline",
+      "seed": 5660,
+      "category": 4,
+      "question_count": 6,
+      "f1": 0.7566564260112647
+    },
+    {
+      "condition": "baseline",
+      "seed": 5660,
+      "category": 5,
+      "question_count": 3,
+      "f1": 1.0
+    },
+    {
+      "condition": "modified",
+      "seed": 5660,
+      "category": 1,
+      "question_count": 6,
+      "f1": 0.3342712842712843
+    },
+    {
+      "condition": "modified",
+      "seed": 5660,
+      "category": 2,
+      "question_count": 5,
+      "f1": 0.7603174603174603
+    },
+    {
+      "condition": "modified",
+      "seed": 5660,
+      "category": 4,
+      "question_count": 6,
+      "f1": 0.7348111658456487
+    },
+    {
+      "condition": "modified",
+      "seed": 5660,
+      "category": 5,
+      "question_count": 3,
+      "f1": 1.0
+    },
+    {
+      "condition": "baseline",
+      "seed": 5661,
+      "category": 1,
+      "question_count": 6,
+      "f1": 0.33653906006847184
+    },
+    {
+      "condition": "baseline",
+      "seed": 5661,
+      "category": 2,
+      "question_count": 5,
+      "f1": 0.6649572649572649
+    },
+    {
+      "condition": "baseline",
+      "seed": 5661,
+      "category": 4,
+      "question_count": 6,
+      "f1": 0.6861904761904762
+    },
+    {
+      "condition": "baseline",
+      "seed": 5661,
+      "category": 5,
+      "question_count": 3,
+      "f1": 1.0
+    },
+    {
+      "condition": "modified",
+      "seed": 5661,
+      "category": 1,
+      "question_count": 6,
+      "f1": 0.38033448033448036
+    },
+    {
+      "condition": "modified",
+      "seed": 5661,
+      "category": 2,
+      "question_count": 5,
+      "f1": 0.7777777777777778
+    },
+    {
+      "condition": "modified",
+      "seed": 5661,
+      "category": 4,
+      "question_count": 6,
+      "f1": 0.7379551820728292
+    },
+    {
+      "condition": "modified",
+      "seed": 5661,
+      "category": 5,
+      "question_count": 3,
+      "f1": 1.0
+    },
+    {
+      "condition": "baseline",
+      "seed": 5662,
+      "category": 1,
+      "question_count": 6,
+      "f1": 0.32316017316017315
+    },
+    {
+      "condition": "baseline",
+      "seed": 5662,
+      "category": 2,
+      "question_count": 5,
+      "f1": 0.726984126984127
+    },
+    {
+      "condition": "baseline",
+      "seed": 5662,
+      "category": 4,
+      "question_count": 6,
+      "f1": 0.6510946907498631
+    },
+    {
+      "condition": "baseline",
+      "seed": 5662,
+      "category": 5,
+      "question_count": 3,
+      "f1": 1.0
+    },
+    {
+      "condition": "modified",
+      "seed": 5662,
+      "category": 1,
+      "question_count": 6,
+      "f1": 0.32744588744588743
+    },
+    {
+      "condition": "modified",
+      "seed": 5662,
+      "category": 2,
+      "question_count": 5,
+      "f1": 0.651984126984127
+    },
+    {
+      "condition": "modified",
+      "seed": 5662,
+      "category": 4,
+      "question_count": 6,
+      "f1": 0.653968253968254
+    },
+    {
+      "condition": "modified",
+      "seed": 5662,
+      "category": 5,
+      "question_count": 3,
+      "f1": 1.0
+    }
+  ],
+  "seeds": [
+    5660,
+    5661,
+    5662
+  ],
+  "planned_seeds": [
+    5660,
+    5661,
+    5662
+  ],
+  "complete": true,
+  "recovery": {
+    "source": "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/experiment-20261108-153818-44119",
+    "utc_started": "20261113-060600",
+    "retained_seeds": [
+      5660,
+      5661
+    ],
+    "rerun_seed": 5662,
+    "reason": "Original third pair contains API failures and missing modified results",
+    "limitation": "Third pair rerun on a later date; provider alias, load and caching may drift"
+  },
+  "baseline": {
+    "f1": {
+      "mean": 0.6243301978341401,
+      "sample_variance": 2.104129821241867e-06,
+      "sample_std": 0.0014505618984524125,
+      "values": [
+        0.625909925466377,
+        0.6230581771170006,
+        0.6240224909190426
+      ]
+    },
+    "f1_non_adversarial": {
+      "mean": 0.5580355268636942,
+      "sample_variance": 2.9122904100234008e-06,
+      "sample_std": 0.001706543409944031,
+      "values": [
+        0.5598940299604436,
+        0.5565390319023537,
+        0.5576735187282854
+      ]
+    },
+    "retrieved": {
+      "mean": 45.03333333333333,
+      "sample_variance": 3.2433333333333234,
+      "sample_std": 1.800925687898677,
+      "values": [
+        43.2,
+        46.8,
+        45.1
+      ]
+    },
+    "retrieval_seconds": {
+      "mean": 7.429970288276673,
+      "sample_variance": 0.18335972892675984,
+      "sample_std": 0.42820524159187945,
+      "values": [
+        7.645901465415955,
+        7.707218956947327,
+        6.9367904424667355
+      ]
+    },
+    "answer_seconds": {
+      "mean": 1.1864380319913228,
+      "sample_variance": 0.003230740413795472,
+      "sample_std": 0.05683960251264493,
+      "values": [
+        1.198688304424286,
+        1.2361536383628846,
+        1.124472153186798
+      ]
+    },
+    "total_seconds": {
+      "mean": 8.616408320267995,
+      "sample_variance": 0.23357959332024394,
+      "sample_std": 0.4833007276222993,
+      "values": [
+        8.84458976984024,
+        8.943372595310212,
+        8.061262595653535
+      ]
+    }
+  },
+  "modified": {
+    "f1": {
+      "mean": 0.6493852391504521,
+      "sample_variance": 0.0014122565710350794,
+      "sample_std": 0.03758000227561301,
+      "values": [
+        0.6608041001144449,
+        0.6799313431666373,
+        0.6074202741702742
+      ]
+    },
+    "f1_non_adversarial": {
+      "mean": 0.5875120460593555,
+      "sample_variance": 0.0019546803751350587,
+      "sample_std": 0.04421176738307414,
+      "values": [
+        0.6009460001346411,
+        0.6234486390195733,
+        0.538141499023852
+      ]
+    },
+    "retrieved": {
+      "mean": 23.45,
+      "sample_variance": 0.7274999999999988,
+      "sample_std": 0.8529361054615984,
+      "values": [
+        23.2,
+        24.4,
+        22.75
+      ]
+    },
+    "retrieval_seconds": {
+      "mean": 7.953065903981527,
+      "sample_variance": 1.3490559880092805,
+      "sample_std": 1.1614886947401943,
+      "values": [
+        7.8762790083885195,
+        9.151042819023132,
+        6.831875884532929
+      ]
+    },
+    "answer_seconds": {
+      "mean": 1.1308198650677999,
+      "sample_variance": 0.001034180779206554,
+      "sample_std": 0.03215868124172,
+      "values": [
+        1.164736270904541,
+        1.1269551277160645,
+        1.1007681965827942
+      ]
+    },
+    "total_seconds": {
+      "mean": 9.083885769049326,
+      "sample_variance": 1.3765495979176994,
+      "sample_std": 1.1732645046696415,
+      "values": [
+        9.04101527929306,
+        10.277997946739196,
+        7.932644081115723
+      ]
+    }
+  },
+  "paired_modified_minus_baseline": {
+    "f1": {
+      "mean": 0.02505504131631205,
+      "sample_variance": 0.0014222643778830902,
+      "sample_std": 0.0377129205695222,
+      "values": [
+        0.03489417464806788,
+        0.05687316604963666,
+        -0.016602216748768384
+      ]
+    },
+    "f1_non_adversarial": {
+      "mean": 0.029476519195661226,
+      "sample_variance": 0.001968532010910853,
+      "sample_std": 0.04436814184649671,
+      "values": [
+        0.04105197017419748,
+        0.0669096071172196,
+        -0.019532019704433412
+      ]
+    },
+    "retrieved": {
+      "mean": -21.583333333333336,
+      "sample_variance": 1.8808333333333276,
+      "sample_std": 1.3714347718113784,
+      "values": [
+        -20.000000000000004,
+        -22.4,
+        -22.35
+      ]
+    },
+    "retrieval_seconds": {
+      "mean": 0.5230956157048544,
+      "sample_variance": 0.6639105759815471,
+      "sample_std": 0.8148070789957259,
+      "values": [
+        0.23037754297256452,
+        1.4438238620758055,
+        -0.10491455793380666
+      ]
+    },
+    "answer_seconds": {
+      "mean": -0.05561816692352295,
+      "sample_variance": 0.0021793956952477355,
+      "sample_std": 0.04668399827829377,
+      "values": [
+        -0.03395203351974496,
+        -0.10919851064682007,
+        -0.023703956604003817
+      ]
+    },
+    "total_seconds": {
+      "mean": 0.46747744878133063,
+      "sample_variance": 0.5903725181826742,
+      "sample_std": 0.7683570252055189,
+      "values": [
+        0.1964255094528191,
+        1.3346253514289845,
+        -0.1286185145378118
+      ]
+    }
+  }
+}
