@@ -1,0 +1,2 @@
+python-dotenv>=1.0,<2
+lancedb[pylance]==0.25.3
