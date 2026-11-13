@@ -1,9 +1,30 @@
-> **FTEC5660 Individual Project - reproducibility study.** This student copy of
-> [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) (base commit
-> `db80b6a`) adds a controlled retrieval-depth experiment on LoCoMo. Start with
-> [`reproduction/README.md`](reproduction/README.md) for setup, commands, results,
-> evidence and the 8-page [report](reproduction/submission/report.pdf). Upstream
-> documentation continues below unchanged.
+# FTEC5660 Individual Project: SimpleMem Reproduction
+
+**ZHAO GUODONG | 1155263139**
+
+This study runs the text pipeline from [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem)
+(starting commit `db80b6a7c591e0ea730a058e9f5fc4eb06572299`) on a fixed LoCoMo
+subset and measures one modification: semantic retrieval top-k from 25 to 10.
+
+## Submission
+
+- [Report (8 pages)](report.pdf): setup, metric definitions, paper comparison, modification results, debug diary, and limitations.
+- [GitHub repository](https://github.com/FreshbirdZhao/SimpleMem-Reproducibility): code, commit history, and retained experiment evidence.
+- [Recorded Zoom presentation](https://us06web.zoom.us/clips/share/n_A3LQLlSWecG5G8tEjOLA).
+- [Reproduction instructions](reproduction/README.md): installation, experiment commands, and verification of saved results.
+
+Three paired trials evaluate 20 questions from one complete conversation, for
+120 predictions. Mean F1 changes from **0.6243 to 0.6494**, mean retrieved
+entries from **45.03 to 23.45**, and retrieval-plus-answer latency from
+**8.62 to 9.08 seconds per question**. F1 improves in two trials and decreases
+in the third. These are descriptive subset results using DeepSeek, not an exact
+replication of the paper's headline score or evidence of a general improvement.
+
+## Upstream documentation
+
+The original project documentation follows. For the submitted experiment's
+dependency versions, model configuration, and commands, use the reproduction
+instructions linked above.
 
 <div align="center">
 

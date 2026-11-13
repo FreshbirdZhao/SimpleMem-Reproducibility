@@ -1,5 +1,17 @@
 # FTEC5660 SimpleMem reproduction
 
+## Submission links
+
+- Student: **ZHAO GUODONG / 1155263139**.
+- [Final report (8 pages)](../report.pdf), within the assignment's 10-page limit. An identical copy is retained at [submission/report.pdf](submission/report.pdf).
+- [GitHub repository](https://github.com/FreshbirdZhao/SimpleMem-Reproducibility), with installation/run instructions and incremental commits.
+- [Recorded Zoom presentation](https://us06web.zoom.us/clips/share/n_A3LQLlSWecG5G8tEjOLA). The assignment requires a recording of at most 15 minutes; the viewer must be able to open the shared link.
+
+The assignment allows a meaningful subset, a documented model substitution,
+and a retrieval-k modification. This study reproduces the released text
+pipeline's memory-based question-answering behavior and measures the effect of
+changing semantic top-k. It does not claim to reproduce the exact published F1.
+
 ## Status
 
 The two-question pilot completed successfully on 2026-11-08. Inspection on
@@ -10,7 +22,9 @@ the valid comparison. Preserve the original experiment as failure evidence.
 The complete third pair was successfully rerun in
 `runs/recovered-20261113-060600-75832`, retaining the first two valid pairs.
 All six runs and 120 predictions pass independent evidence validation.
-Final report and slides are in `submission/`; final statistics are in `analysis/`.
+The final report is `../report.pdf`; final statistics are in `analysis/`.
+The presentation is supplied through the Zoom link above. Slide files and
+document-generation scripts are not included in the current checkout.
 Mean F1 changes from 0.624330 to 0.649385; retrieved entries from 45.0333 to
 23.4500; combined retrieval/answer seconds from 8.6164 to 9.0839. F1 improves
 in two of three trials and falls in the third; no consistent gain is established.
@@ -27,22 +41,24 @@ Hosted-model date drift across seeds must be disclosed. Hugging Face models run
 from cache; `run_cached.py` verifies installed NLTK resources before skipping
 redundant download checks. API calls remain online and billable.
 
-```bash
-UV_CACHE_DIR=/tmp/simplemem-report-cache-20261113 uv pip install --python .venv/bin/python --target /tmp/simplemem-report-complete -r reproduction/report-requirements.txt
-PYTHONPATH=/tmp/simplemem-report-complete MPLCONFIGDIR=/tmp/simplemem-mpl .venv/bin/python reproduction/recover_experiment.py reproduction/runs/experiment-20261108-153818-44119
-```
+`recover_experiment.py` is retained as historical recovery source. Its final
+step still references the removed `build_submission.py`; it is not a supported
+end-to-end command in this checkout. To run a new experiment, use
+`start_experiment.sh` as described below.
 
-The recovery script prints its unique directory, validates all six runs, and
-generates the named student's report and slides there. For any completed run:
+On the original machine, where all six local memory databases are retained,
+the following independent evidence check passes:
 
 ```bash
 .venv/bin/python reproduction/validate_evidence.py reproduction/runs/recovered-20261113-060600-75832
 ```
 
 This independently recomputes token-set F1 and timing aggregates and verifies
-the current memory files against their saved checksums. The default analysis
+the current memory files against their saved checksums. A fresh Git clone does
+not contain these databases, so use the saved-results aggregation command
+below for verification without rerunning the model. The default analysis
 requires all three planned seeds; `--seeds 5660 5661` is explicitly a partial
-analysis. Its report is labeled DRAFT and does not meet the planned trial count.
+analysis and does not meet the planned trial count.
 The initial debug diary below is historical, not current setup status.
 
 Scope: the original text SimpleMem pipeline and its LoCoMo evaluator, not
@@ -93,8 +109,14 @@ The reproduction runner automatically loads the repository-root .env before
 initializing SimpleMem. Existing process environment variables take priority
 over .env, and config.py takes priority over both. Never commit secrets.
 
-For DeepSeek, a local .env has been created: fill OPENAI_API_KEY with your
-DeepSeek API key. The variable retains its upstream name because the client
+For DeepSeek, copy the credential-free template and fill in your own key:
+
+```bash
+cp reproduction/deepseek.env.example .env
+```
+
+If `.env` already exists, edit it instead of overwriting it. Set OPENAI_API_KEY
+to your DeepSeek API key. The variable retains its upstream name because the client
 uses an OpenAI-compatible interface; it does not require an OpenAI key.
 The initial model selection is deepseek-chat at https://api.deepseek.com/v1;
 confirm availability with a pilot before the benchmark. Embeddings use the
@@ -102,9 +124,15 @@ local Qwen model, which must be downloaded separately from the LLM service.
 The credential-free template is reproduction/deepseek.env.example. Directly
 running test_locomo10.py does not load .env; use reproduction/run.py instead.
 
-Obtain the original dataset from https://github.com/snap-research/locomo and put
-data/locomo10.json at test_ref/locomo10.json. Record its upstream commit as well
-as the file checksum generated by the preparation script.
+Obtain the dataset at the revision used in this study:
+
+```bash
+curl -fL https://raw.githubusercontent.com/snap-research/locomo/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/data/locomo10.json -o test_ref/locomo10.json
+shasum -a 256 test_ref/locomo10.json
+```
+
+Expected SHA-256:
+`79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4`.
 
 ## Prepare and run
 
@@ -159,39 +187,57 @@ checksums. The evaluator now uses the unified runtime settings in four legacy
 falling back to the correct abstention answer when only `.env` is configured.
 Both conditions use this identical compatibility fix; the metric is unchanged.
 
-Validate and aggregate a completed experiment (replace the experiment path):
+## Verify saved results without API calls
+
+From the repository root, aggregate the six retained valid runs with Python
+3.10 or newer. This uses only the standard library; API credentials, model
+downloads, and local memory databases are not required. Use a new output
+directory each time because the summarizer refuses to overwrite existing files:
 
 ```bash
-.venv/bin/python reproduction/summarize.py reproduction/runs/experiment-20261108-153818-44119 --output reproduction/analysis
+verification_root=$(mktemp -d)
+python3 reproduction/summarize.py reproduction/runs/recovered-20261113-060600-75832 --output "$verification_root/analysis"
 ```
 
 This refuses incomplete runs, mismatched settings/subsets/memory pairs, and
-known retrieval/evaluation error messages. It produces per-trial, per-question,
-and per-category CSVs plus a summary containing means and sample variances.
+known retrieval/evaluation error messages. Memory pairing here is checked
+against the recorded manifest hashes, not against absent database files.
+It produces per-trial, per-question, and per-category CSVs plus a summary
+containing means and sample variances. The committed reference outputs are in
+`reproduction/analysis/`. The original `experiment-20261108-153818-44119`
+contains the failed third pair and must not be used for the final three-trial
+comparison.
 
-Generate the report PDF (enforced <=10 pages), publication figures, and a
-legacy 8-slide PDF with an isolated document-rendering dependency target:
+For a newly completed experiment, replace the input directory with the one
+printed by `start_experiment.sh`. That script retains the logs needed by the
+summarizer; the individual `run.py` examples alone do not capture those logs.
+
+After installing the benchmark dependencies, run the six targeted tests with:
 
 ```bash
-uv pip install --python .venv/bin/python --target /tmp/simplemem-report-deps -r reproduction/report-requirements.txt
-PYTHONPATH=/tmp/simplemem-report-deps MPLCONFIGDIR=/tmp/simplemem-mpl .venv/bin/python reproduction/build_submission.py reproduction/analysis --output reproduction/submission --name 'Your name' --student-id 'Your ID'
+.venv/bin/python -m unittest reproduction.test_paired_memory -v
 ```
 
-The final deck is an editable 16:9 PowerPoint built from the same validated
-summary, with speaker notes generated beside it:
+These tests use mocked LLM calls. Importing the evaluator loads the MiniLM
+metric model; with its weights already cached, prefix the command with
+`HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1` to avoid model-download checks.
 
-```bash
-uv pip install --python .venv/bin/python python-pptx
-.venv/bin/python reproduction/build_slides_pptx.py reproduction/analysis \
-    --output reproduction/submission/presentation.pptx \
-    --notes reproduction/submission/presentation-notes.md
-```
+## Interpretation of the final results
 
-`presentation.pdf` is exported from `presentation.pptx`; edit the PPTX, not the
-PDF. The deck and notes are preparation materials, not a Zoom recording; the
-Zoom recording link is supplied with the submission. The student-owned
-repository is https://github.com/FreshbirdZhao/SimpleMem-Reproducibility.
-Never push submission changes to the author's upstream remote.
+Across three paired trials, reducing semantic top-k from 25 to 10 changes:
+
+- Mean F1: 0.624330 to 0.649385 (paired mean difference +0.025055).
+- Mean merged memory entries per question: 45.0333 to 23.4500.
+- Mean retrieval-plus-answer latency: 8.6164 to 9.0839 seconds per question.
+
+Sample variances across trials are reported in the report and `analysis/summary.json`.
+F1 improves in two trials and decreases in one; smaller retrieved context does
+not establish lower latency, token usage, or monetary cost. The study covers
+one conversation and 20 questions, omits category 3, uses a different hosted
+model from the paper, and always runs baseline first. The third pair was rerun
+on a later date. An inherited keyword-index refresh limitation affects both
+conditions. These constraints limit generalization and direct comparison with
+the paper's score; see report Sections 5 and 6 for details.
 
 ## Interpretation and deliverables
 
@@ -214,7 +260,10 @@ Never push submission changes to the author's upstream remote.
 - Required final package: report <=10 pages, GitHub link with setup/run steps
   and reviewable commits, and a recorded Zoom presentation <=15 minutes.
 
-## Initial debug diary
+## Historical debug diary: initial setup
+
+The following entries describe earlier attempts and their resolution, not
+missing prerequisites in the completed experiment.
 
 - Repository is now inside the writable workspace.
 - System python3 is 3.9.6, below the package's >=3.10 requirement.
