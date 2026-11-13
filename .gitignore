@@ -69,6 +69,8 @@ env/
 lancedb_data/
 omni_memory_data/
 evolution_results/
+reproduction/runs/
+reproduction/local-subset/
 
 # Log files
 *.log
@@ -87,3 +89,7 @@ test_results/
 *.pth
 *.onnx
 docs/other
+
+# Reproduction deliverables: keep analysis tables, exclude local drafts and run artifacts
+!reproduction/analysis/*.json
+reproduction/*-draft/
