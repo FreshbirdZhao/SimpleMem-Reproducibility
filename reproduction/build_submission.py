@@ -378,10 +378,10 @@ def main():
                 "（操作：讲完立即 Cmd+Tab 回到 PDF，翻到第 5 页。整段演示控制在 45 秒内；如果终端出错，直接切回 PDF 说一句 “I will show a screenshot instead”，不要现场 debug。）",
                 "",
             ])
-    presentation = SimpleDocTemplate(str(output / "presentation.pdf"), pagesize=(960, 540), leftMargin=45, rightMargin=45, topMargin=35, bottomMargin=30)
+    presentation = SimpleDocTemplate(str(output / "presentation-legacy.pdf"), pagesize=(960, 540), leftMargin=45, rightMargin=45, topMargin=35, bottomMargin=30)
     presentation.build(slides)
-    slide_count = len(PdfReader(output / "presentation.pdf").pages)
-    (output / "presentation-notes.md").write_text("\n".join(notes))
+    slide_count = len(PdfReader(output / "presentation-legacy.pdf").pages)
+    (output / "presentation-notes-legacy.md").write_text("\n".join(notes))
     (output / "artifact-checks.json").write_text(json.dumps({"report_pages": page_count, "presentation_pages": slide_count, "report_page_limit": 10, "source_analysis": str(args.analysis.resolve())}, indent=2))
     print(f"Created report ({page_count} pages), presentation ({slide_count} pages), figures, and narration notes in {output}")
 

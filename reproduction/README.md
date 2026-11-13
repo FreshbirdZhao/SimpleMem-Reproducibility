@@ -160,16 +160,27 @@ This refuses incomplete runs, mismatched settings/subsets/memory pairs, and
 known retrieval/evaluation error messages. It produces per-trial, per-question,
 and per-category CSVs plus a summary containing means and sample variances.
 
-Generate a report PDF (enforced <=10 pages), presentation PDF, speaker notes,
-and publication figures with an isolated document-rendering dependency target:
+Generate the report PDF (enforced <=10 pages), publication figures, and a
+legacy 8-slide PDF with an isolated document-rendering dependency target:
 
 ```bash
 uv pip install --python .venv/bin/python --target /tmp/simplemem-report-deps -r reproduction/report-requirements.txt
 PYTHONPATH=/tmp/simplemem-report-deps MPLCONFIGDIR=/tmp/simplemem-mpl .venv/bin/python reproduction/build_submission.py reproduction/analysis --output reproduction/submission --name 'Your name' --student-id 'Your ID'
 ```
 
-The presentation PDF and notes are preparation materials, not a Zoom recording;
-the Zoom recording link is supplied with the submission. The student-owned
+The final deck is an editable 16:9 PowerPoint built from the same validated
+summary, with speaker notes generated beside it:
+
+```bash
+uv pip install --python .venv/bin/python python-pptx
+.venv/bin/python reproduction/build_slides_pptx.py reproduction/analysis \
+    --output reproduction/submission/presentation.pptx \
+    --notes reproduction/submission/presentation-notes.md
+```
+
+`presentation.pdf` is exported from `presentation.pptx`; edit the PPTX, not the
+PDF. The deck and notes are preparation materials, not a Zoom recording; the
+Zoom recording link is supplied with the submission. The student-owned
 repository is https://github.com/FreshbirdZhao/SimpleMem-Reproducibility.
 Never push submission changes to the author's upstream remote.
 
