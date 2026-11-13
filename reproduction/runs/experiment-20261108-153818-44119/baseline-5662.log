@@ -1,0 +1,1308 @@
+W1108 16:09:19.776000 46233 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+[nltk_data] Error loading punkt: Security Violation [pathsec.urlopen]:
+[nltk_data]     SSRF attempt to restricted IP 198.18.0.17
+[nltk_data] Error loading wordnet: Security Violation
+[nltk_data]     [pathsec.urlopen]: SSRF attempt to restricted IP
+[nltk_data]     198.18.0.17
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 6967.96it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Initializing SimpleMem system...
+============================================================
+Initializing SimpleMem System
+============================================================
+Using custom OpenAI base URL: https://api.deepseek.com/v1
+Loading embedding model: Qwen/Qwen3-Embedding-0.6B
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6389.51it/s]
+/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/utils/embedding.py:82: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dimension = self.model.get_sentence_embedding_dimension()
+SentenceTransformer model loaded with dimension: 1024
+Created new table: memory_entries
+
+Clearing existing database...
+Created new table: memory_entries
+Database cleared
+
+System initialization complete!
+============================================================
+
+================================================================================
+                         SimpleMem LoComo10 Dataset Test                        
+================================================================================
+
+Loading dataset from /Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/experiment-20261108-153818-44119/subset/subset.json...
+
+Sample 0:
+  Total QAs: 20
+  QAs with image evidence: 20
+
+Overall Statistics:
+Total QAs: 20
+Total QAs with image evidence: 20
+Average QAs per sample: 20.00
+Min QAs in a sample: 20
+Max QAs in a sample: 20
+Created new table: memory_entries
+Database cleared
+
+================================================================================
+Testing Sample 0
+================================================================================
+Adding 419 dialogues to memory...
+
+Processing window: 40 dialogues (processed 0 so far)
+FTS index created (Tantivy mode)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 40 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 80 so far)
+Added 38 memory entries
+Generated 38 memory entries
+
+Processing window: 40 dialogues (processed 120 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 160 so far)
+Added 25 memory entries
+Generated 25 memory entries
+
+Processing window: 40 dialogues (processed 200 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 240 so far)
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 280 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 320 so far)
+Added 41 memory entries
+Generated 41 memory entries
+
+Processing window: 40 dialogues (processed 360 so far)
+Added 41 memory entries
+Generated 41 memory entries
+
+Processing remaining dialogues: 39 (fallback mode)
+Added 42 memory entries
+Generated 42 memory entries
+Memory building time: 307.30s
+
+[Q1] Category 2: When did Melanie paint a sunrise?
+
+[Planning] Analyzing information requirements for: When did Melanie paint a sunrise?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is included as the first query to directly address the temporal requirement. A second query is added to confirm the entity and event by specifying 'Melanie painted a sunrise', which helps disambiguate the painter and verify the artwork. Two queries are sufficient to cover the high-priority temporal and event identification needs, with the entity identification partially addressed by the second query.
+[Planning] Generated 2 targeted queries
+[Search 1] When did Melanie paint a sunrise?
+[Search 2] Melanie painted a sunrise
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 35 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required information types are addressed: entity identification is confirmed as Melanie (the speaker in the conversation), event identification is confirmed by Info 1 stating Melanie painted the lake sunrise painting, and the temporal information is provided as 2022. Although the exact date is not given, the year satisfies the temporal requirement for a date or time period.
+[Intelligent Reflection Round 1] Information is complete
+Error calculating BERTScore: 503 Service Unavailable
+  Retrieved: 35 memory entries
+  Retrieval time: 6.123s
+  Answer time: 0.667s
+  Total time: 6.790s
+  Answer: In 2022
+  Reference: 2022
+  F1: 0.667, ROUGE-L: 0.667, BERTScore: 0.000
+
+[Q2] Category 2: When did Caroline meet up with her friends, family, and mentors?
+
+[Planning] Analyzing information requirements for: When did Caroline meet up with her friends, family, and mentors?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is included as one query to capture the temporal and event details directly. A second query adds context about the specific event or occasion, which helps identify the meetup and disambiguate the referenced Caroline, fulfilling the event identification and entity disambiguation requirements without redundancy.
+[Planning] Generated 2 targeted queries
+[Search 1] When did Caroline meet up with her friends, family, and mentors?
+[Search 2] Caroline meetup event friends family mentors date occasion
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 55 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 40% - The information provides some temporal details and event context, but it does not clearly establish a single meetup with friends, family, and mentors together. It mentions separate events (family meetup the week before 2023-06-09, friends outing on 2023-09-09/10, mentorship program weekend before 2023-07-17) and general support from these groups, but lacks a specific date/time when Caroline met up with all three groups together or a clear identification of a combined event. Entity disambiguation is partially addressed but the core temporal and event identification for the combined meetup remain incomplete.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information indicates that Caroline met with family the week before 2023-06-09 (around early June 2023), with friends on the weekend of 2023-09-09 to 2023-09-10, and with mentors possibly at a Pride event or mentorship program, but the exact dates and whether these were combined or separate events are not fully specified. The specific dates for meetings with mentors and confirmation of any combined meetup are missing.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Caroline meet up with friends family and mentors date
+[Additional Search 2] Caroline mentorship program meeting date with mentors
+[Additional Search 3] Caroline family friends mentors combined event date
+[Intelligent Reflection Round 1] Total results: 71
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 40% - The available information provides some temporal details and event context, but it does not clearly establish a single meetup with friends, family, and mentors together. It mentions a family meetup the week before 2023-06-09, a day out with friends on the weekend of 2023-09-09 to 2023-09-10, and various separate events involving mentors or community members. There is no explicit date or event where Caroline met up with all three groups together, and the entity disambiguation is incomplete regarding whether the question refers to a combined event or separate meetings.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information mentions several separate meetups: with family the week before 2023-06-09, with friends on the weekend of 2023-09-09 to 2023-09-10, and with mentors/mentees at a pride event in June 2023 and a mentorship program the weekend before 2023-07-17. However, there is no single event where Caroline met with friends, family, and mentors together, nor is there a clear date for a combined meetup. The missing information is whether such a combined meetup occurred and, if so, its date/time and event details. Additionally, the specific Caroline needs disambiguation, but the context suggests a transgender woman involved in LGBTQ advocacy.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Caroline friends family mentors meetup date
+[Additional Search 2] Caroline combined gathering friends family mentors event
+[Additional Search 3] Caroline meet up with friends family and mentors together
+[Intelligent Reflection Round 2] Total results: 74
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8253.58it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 74 memory entries
+  Retrieval time: 25.951s
+  Answer time: 0.933s
+  Total time: 26.885s
+  Answer: The week before 09 June 2023
+  Reference: The week before 9 June 2023
+  F1: 0.833, ROUGE-L: 0.833, BERTScore: 0.986
+
+[Q3] Category 1: What books has Melanie read?
+
+[Planning] Analyzing information requirements for: What books has Melanie read?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is ambiguous because 'Melanie' could refer to many people. The first query includes the original question to capture any direct answers. The second query adds context to disambiguate Melanie and find reading lists or book mentions, targeting the person identification and reading history requirements.
+[Planning] Generated 2 targeted queries
+[Search 1] What books has Melanie read?
+[Search 2] Melanie reading list books read
+[Keyword Search] Found 1 results
+[Structured Search] Found 5 results
+[Planning] Found 37 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 60% - The information identifies Melanie and provides some reading history (Charlotte's Web, an unnamed book read in 2022, and a book Caroline recommended), but it does not provide a complete list of books Melanie has read. The source of information is implied through conversation context but not explicitly stated. Critical gaps remain because the full reading history is missing.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The current information identifies Melanie as a person who has conversations with Caroline, but her full name and context are not specified. We know she read 'Charlotte's Web' as a child and a book in 2022 that inspired her to pursue dreams, and she is currently reading a book Caroline recommended. However, the specific titles of the 2022 book and the currently reading book are missing, as is a comprehensive list of books she has read. The source of this reading history is personal conversations with Caroline, but no external source is provided.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Melanie Caroline book recommendation reading 2022 pursue dreams
+[Additional Search 2] Melanie Charlotte's Web favorite childhood book Caroline conversation
+[Additional Search 3] Melanie reading list books mentioned in conversations with Caroline
+[Intelligent Reflection Round 1] Total results: 64
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 40% - The information identifies Melanie and provides some reading history (Charlotte's Web, an unnamed book read in 2022, and a book Caroline recommended), but it does not provide a comprehensive list of books Melanie has read. The source of information is implicit from the conversation context but not explicitly stated. Critical gaps remain because the reading history is incomplete and the specific titles of several books are missing.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information identifies Melanie as a person who interacts with Caroline and mentions two books she has read: Charlotte's Web (read as a child) and an unnamed book read in 2022. However, the full list of books Melanie has read is missing, as is the title of the 2022 book and the book Caroline recommended that Melanie is currently reading. Additionally, the source of the reading history is only implied through conversation snippets, not explicitly stated.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Melanie Caroline book recommendations reading list
+[Additional Search 2] Melanie read in 2022 book title
+[Additional Search 3] Melanie Charlotte's Web favorite childhood book
+[Intelligent Reflection Round 2] Total results: 74
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 6726.35it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 74 memory entries
+  Retrieval time: 11.880s
+  Answer time: 1.390s
+  Total time: 13.270s
+  Answer: A book with a gold coin on the cover (read in 2022), Charlotte's Web as a child, and a book Caroline recommended
+  Reference: "Nothing is Impossible", "Charlotte's Web"
+  F1: 0.000, ROUGE-L: 0.207, BERTScore: 0.869
+
+[Q4] Category 1: What does Melanie do to destress?
+
+[Planning] Analyzing information requirements for: What does Melanie do to destress?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is ambiguous because 'Melanie' could refer to many people. We need to first identify which Melanie is being asked about, then find specific destress activities. The original query is included as one option, but a more targeted query combining 'Melanie' with 'destress' and 'stress relief' will help retrieve behavioral information. A second query focusing on 'Melanie' with 'interview' or 'biography' will help identify the person and context.
+[Planning] Generated 2 targeted queries
+[Search 1] What does Melanie do to destress?
+[Search 2] Melanie destress activities stress relief interview biography
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 41 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - All required information types are addressed. The identity of Melanie is established through context (conversations with Caroline, family details, activities). Specific destressing behaviors are extensively covered: running, reading, playing violin, painting, pottery, swimming, nature/camping, family time, and clarinet. Contextual information is provided through timestamps and conversational references to Caroline. The information is comprehensive enough to answer what Melanie does to destress.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8204.15it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 41 memory entries
+  Retrieval time: 7.881s
+  Answer time: 1.222s
+  Total time: 9.103s
+  Answer: She runs, paints, does pottery, and spends time in nature.
+  Reference: Running, pottery
+  F1: 0.167, ROUGE-L: 0.333, BERTScore: 0.898
+
+[Q5] Category 2: When did Caroline go to the adoption meeting?
+
+[Planning] Analyzing information requirements for: When did Caroline go to the adoption meeting?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question directly asks for the temporal information about Caroline's adoption meeting. A single targeted query combining the key entities and the temporal aspect should retrieve the required date/time. No additional queries are needed.
+[Planning] Generated 1 targeted queries
+[Search 1] When did Caroline go to the adoption meeting?
+[Keyword Search] Found 5 results
+[Structured Search] Found 0 results
+[Planning] Found 28 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 20% - The required temporal information about when Caroline attended the adoption meeting is not provided. Info 11 mentions a council meeting for adoption on 2023-07-14, but it is not confirmed as the adoption meeting referenced in the question. No other information specifies a date or time for an adoption meeting Caroline attended.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information does not specify when Caroline attended an adoption meeting. While Info 11 mentions a council meeting for adoption on 2023-07-14, it is unclear if this is the adoption meeting in question. The exact date and confirmation of the specific adoption meeting Caroline attended are missing.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Caroline adoption meeting date
+[Additional Search 2] Caroline attended adoption meeting time
+[Additional Search 3] Caroline adoption meeting 2023
+[Intelligent Reflection Round 1] Total results: 38
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 20% - The available information does not specify when Caroline attended an adoption meeting. Info 11 mentions a council meeting for adoption on 2023-07-14, but this is not clearly the same as an adoption meeting. No other information provides a date or time for an adoption meeting, so the high-priority temporal requirement is unmet. The event identification is also ambiguous because the specific adoption meeting is not confirmed.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information does not specify when Caroline attended an adoption meeting. Info 11 mentions a council meeting for adoption on 2023-07-14, but it is unclear if this is the adoption meeting referenced. The exact date/time of the adoption meeting Caroline attended is missing.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Caroline adoption meeting date
+[Additional Search 2] Caroline attended adoption meeting time
+[Additional Search 3] Caroline adoption meeting 2023
+[Intelligent Reflection Round 2] Total results: 38
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7375.39it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 38 memory entries
+  Retrieval time: 9.174s
+  Answer time: 1.204s
+  Total time: 10.377s
+  Answer: 14 July 2023
+  Reference: The friday before 15 July 2023
+  F1: 0.444, ROUGE-L: 0.444, BERTScore: 0.919
+
+[Q6] Category 1: What types of pottery have Melanie and her kids made?
+
+[Planning] Analyzing information requirements for: What types of pottery have Melanie and her kids made?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question is already specific and directly targets both required information types: the list of pottery types and the association with Melanie and her kids. A single query using the original wording should efficiently retrieve the needed information.
+[Planning] Generated 1 targeted queries
+[Search 1] What types of pottery have Melanie and her kids made?
+[Keyword Search] Found 4 results
+[Structured Search] Found 5 results
+[Planning] Found 34 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The information identifies specific pottery types made by Melanie and her kids: a cup with a dog face (made by the kids), pots (made by Melanie and her kids), bowls (made by Melanie), a starfish (made by Melanie), and a flower plate (made by Melanie). The association is confirmed for the kids' cup and the family pots; for Melanie's individual items, the context of her pottery involvement supports the association. All required information types are addressed with sufficient detail for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8451.92it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 34 memory entries
+  Retrieval time: 5.511s
+  Answer time: 1.119s
+  Total time: 6.630s
+  Answer: Pots and a cup with a dog face
+  Reference: bowls, cup
+  F1: 0.222, ROUGE-L: 0.200, BERTScore: 0.889
+
+[Q7] Category 1: What are Melanie's pets' names?
+
+[Planning] Analyzing information requirements for: What are Melanie's pets' names?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and may refer to any Melanie. To efficiently gather the required information, we use the original query to capture direct answers and a second query to identify which Melanie is being referred to, ensuring context for the pet names.
+[Planning] Generated 2 targeted queries
+[Search 1] What are Melanie's pets' names?
+[Search 2] Which Melanie has pets and what are their names?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 36 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - All required information types are addressed: Melanie is identified contextually through her conversations with Caroline, her pets are listed (dog, cat, and another cat), and their names are provided (Luna, Oliver, Bailey). The information is sufficient to answer the question comprehensively.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 22223.52it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 36 memory entries
+  Retrieval time: 5.098s
+  Answer time: 0.918s
+  Total time: 6.015s
+  Answer: Luna, Oliver, and Bailey
+  Reference: Oliver, Luna, Bailey
+  F1: 0.857, ROUGE-L: 0.571, BERTScore: 0.944
+
+[Q8] Category 2: When did Caroline draw a self-portrait?
+
+[Planning] Analyzing information requirements for: When did Caroline draw a self-portrait?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original query is broad and may not identify which Caroline or provide a clear date. A second query adds specificity by including 'self-portrait' and 'date' to target temporal information and disambiguate the subject. Two queries are sufficient to cover identification and temporal requirements.
+[Planning] Generated 2 targeted queries
+[Search 1] When did Caroline draw a self-portrait?
+[Search 2] Caroline self-portrait drawing date
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 40 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 95% - The required temporal information is addressed: Info 2 states the self-portrait was made the previous week relative to 2023-08-23, placing it around mid-August 2023. Identification is sufficient through context (Caroline in conversation with Melanie, with details about her transition and art). Event confirmation is provided by Info 1 and Info 2, which describe the self-portrait and its details. No critical gaps remain for answering when Caroline drew the self-portrait.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 20646.69it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 40 memory entries
+  Retrieval time: 5.921s
+  Answer time: 1.617s
+  Total time: 7.537s
+  Answer: The previous week, around 16 August 2023
+  Reference: The week before 23 August 2023
+  F1: 0.615, ROUGE-L: 0.615, BERTScore: 0.956
+
+[Q9] Category 1: What are some changes Caroline has faced during her transition journey?
+
+[Planning] Analyzing information requirements for: What are some changes Caroline has faced during her transition journey?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and may not clearly specify the context of Caroline's transition. A second query is added to disambiguate the type of transition (e.g., gender transition) and retrieve specific changes, ensuring both identity/context and change details are covered efficiently.
+[Planning] Generated 2 targeted queries
+[Search 1] What are some changes Caroline has faced during her transition journey?
+[Search 2] Caroline transition journey gender transition changes
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 42 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 95% - The provided information addresses all required information types: identity (Caroline is a transgender woman), changes (social/relationship changes, emotional growth, physical body changes explored through art, increased happiness and authenticity), and timeline (transition started around 2020, with references to a three-year journey and various events in 2023). The information is sufficient to provide a comprehensive answer about the changes Caroline has faced.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 13390.32it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 42 memory entries
+  Retrieval time: 6.118s
+  Answer time: 1.528s
+  Total time: 7.646s
+  Answer: Difficult acceptance, changed relationships with some friends unable to handle it, an upsetting encounter with religious conservatives, and exploring her changing body through art.
+  Reference: Changes to her body, losing unsupportive friends
+  F1: 0.267, ROUGE-L: 0.258, BERTScore: 0.892
+
+[Q10] Category 2: When did Melanie's family go on a roadtrip?
+
+[Planning] Analyzing information requirements for: When did Melanie's family go on a roadtrip?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question directly asks for the temporal information about Melanie's family roadtrip. A single, focused query using the key entities and question phrasing should retrieve both the event confirmation and the date/time period.
+[Planning] Generated 1 targeted queries
+[Search 1] When did Melanie's family go on a roadtrip?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 35 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required information types are temporal (when the roadtrip occurred) and event (confirmation that a roadtrip involving Melanie's family occurred). Info 2 and Info 21 confirm that Melanie's family went on a roadtrip during the weekend before 2023-10-20, and Info 3 further supports this by mentioning a trail walk on 2023-10-19 as a way to relax after the road trip. Thus, both the event and the time period are sufficiently addressed.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 18722.85it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 35 memory entries
+  Retrieval time: 5.285s
+  Answer time: 1.211s
+  Total time: 6.495s
+  Answer: The weekend before 20 October 2023
+  Reference: The weekend before 20 October 2023
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 1.000
+
+[Q11] Category 1: What items has Melanie bought?
+
+[Planning] Analyzing information requirements for: What items has Melanie bought?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question is broad but directly asks for the items Melanie bought. To satisfy the two high-priority information requirements, we need one query to identify Melanie in context and another to retrieve her purchase records. The original query can serve as the transaction records query, while a separate query targets Melanie's identity. This yields a minimal set of two focused queries.
+[Planning] Generated 2 targeted queries
+[Search 1] Who is Melanie?
+[Search 2] What items has Melanie bought?
+[Keyword Search] Found 0 results
+[Structured Search] Found 5 results
+[Planning] Found 38 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 50% - The identity of Melanie is established through multiple conversational references. However, the transaction records are only partially covered: one specific purchase is mentioned (wooden figurines bought on 2023-10-21), and there is a reference to 'new shoes' without explicit confirmation that Melanie bought them. No other purchased items are listed, so the information is insufficient to comprehensively answer what items Melanie has bought.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information identifies Melanie as a person who interacts with Caroline and mentions one purchase: wooden figurines bought on 2023-10-21. However, the full list of items Melanie has bought is missing. Additional purchase records or statements about items Melanie acquired are needed.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Melanie bought items purchase history
+[Additional Search 2] Melanie shopping purchases conversation
+[Additional Search 3] Melanie new shoes wooden figurines bought
+[Intelligent Reflection Round 1] Total results: 77
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 50% - The identity of Melanie is established, but the transaction records are only partially covered. The available information mentions that Melanie bought new shoes and wooden figurines, but it does not provide a comprehensive list of all items Melanie has bought. Many other items are mentioned as made, received, or otherwise acquired, but not explicitly as purchases. Therefore, the information is insufficient to fully answer what items Melanie has bought.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information identifies Melanie as a person with kids, husband, pets (Luna, Oliver, Bailey), and interests in pottery, painting, and running. However, the only explicit purchase mentioned is wooden figurines bought on 2023-10-21. The full list of items Melanie has bought is missing, and other purchase-related details (e.g., new shoes, pottery supplies, art materials) are not explicitly stated as bought by Melanie. Targeted searches are needed to find transaction records or mentions of items Melanie purchased.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Melanie bought items purchase transaction records
+[Additional Search 2] Melanie shopping purchases new shoes pottery supplies art materials
+[Additional Search 3] Melanie wooden figurines bought 2023-10-21 other purchases
+[Intelligent Reflection Round 2] Total results: 94
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 10306.26it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 94 memory entries
+  Retrieval time: 10.764s
+  Answer time: 0.865s
+  Total time: 11.629s
+  Answer: New shoes and wooden figurines
+  Reference: Figurines, shoes
+  F1: 0.571, ROUGE-L: 0.286, BERTScore: 0.915
+
+[Q12] Category 4: What does Caroline's necklace symbolize?
+
+[Planning] Analyzing information requirements for: What does Caroline's necklace symbolize?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is ambiguous because 'Caroline' could refer to multiple characters across works. The first query uses the original phrasing to capture direct answers, while the second adds 'symbolism' and 'meaning' to target analytical or interpretive sources that explain the necklace's significance and provide textual evidence.
+[Planning] Generated 2 targeted queries
+[Search 1] What does Caroline's necklace symbolize?
+[Search 2] Caroline necklace symbolism meaning
+[Keyword Search] Found 5 results
+[Structured Search] Found 4 results
+[Planning] Found 38 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The available information identifies Caroline as a character in a conversation with Melanie (contextual identification), provides explicit symbolic meaning of the necklace (love, faith, strength, roots, family support), and includes textual evidence describing the necklace as a gift from her grandmother in Sweden and a photo showing a cross and heart pendant. All required information types are addressed with sufficient detail for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7817.66it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 38 memory entries
+  Retrieval time: 6.349s
+  Answer time: 1.108s
+  Total time: 7.458s
+  Answer: Love, faith, and strength; reminds her of her roots and family support
+  Reference: love, faith, and strength
+  F1: 0.429, ROUGE-L: 0.500, BERTScore: 0.928
+
+[Q13] Category 4: What motivated Caroline to pursue counseling?
+
+[Planning] Analyzing information requirements for: What motivated Caroline to pursue counseling?
+[Planning] Identified 4 information requirements
+[Planning] Strategy: The original question is broad but directly asks for motivation. To cover both explicit stated reasons and personal background/influential events, two queries are sufficient: one general query using the original phrasing to capture explicit statements, and one focused on personal story/background to capture experiences and turning points.
+[Planning] Generated 2 targeted queries
+[Search 1] What motivated Caroline to pursue counseling?
+[Search 2] Caroline counseling career personal story background inspiration
+[Keyword Search] Found 1 results
+[Structured Search] Found 5 results
+[Planning] Found 40 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - All required information types are addressed. Caroline's personal background is covered by her mental health struggles and the support she received (Info 10, 11, 12). Stated reasons are explicit: she wants to help others with similar issues and provide support (Info 2, 3, 5, 6, 10, 11, 35). Influential events include her own journey, support groups, and volunteering at an LGBTQ+ youth center (Info 9, 10, 12, 21, 23, 38, 40). Role models/inspirations include the support from friends, family, mentors, and the resilience of young people (Info 30, 31, 32). The information is sufficient for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 11495.94it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 40 memory entries
+  Retrieval time: 7.644s
+  Answer time: 1.504s
+  Total time: 9.148s
+  Answer: Her own mental health journey and the support she received inspired her to help others with similar issues.
+  Reference: her own journey and the support she received, and how counseling improved her life
+  F1: 0.552, ROUGE-L: 0.563, BERTScore: 0.911
+
+[Q14] Category 4: What do sunflowers represent according to Caroline?
+
+[Planning] Analyzing information requirements for: What do sunflowers represent according to Caroline?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and may not surface the specific Caroline or her statement. A second query adds context by pairing 'Caroline' with 'sunflowers' and 'represent' to target the attribution and symbolic meaning, while the original query serves as a baseline. Two queries are sufficient to cover the high-priority requirements.
+[Planning] Generated 2 targeted queries
+[Search 1] What do sunflowers represent according to Caroline?
+[Search 2] Caroline sunflowers represent meaning
+[Keyword Search] Found 0 results
+[Structured Search] Found 5 results
+[Planning] Found 38 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - All required information types are addressed: Caroline is identified by name and context (conversations with Melanie), her specific claim that sunflowers mean warmth and happiness is provided in Info 1, and the source/context (a conversation with Melanie on 2023-07-15) is also given. The information is sufficient to answer the question comprehensively.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 11371.59it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 38 memory entries
+  Retrieval time: 6.200s
+  Answer time: 1.290s
+  Total time: 7.490s
+  Answer: Warmth and happiness
+  Reference: warmth and happiness
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 0.949
+
+[Q15] Category 4: How long has Melanie been creating art?
+
+[Planning] Analyzing information requirements for: How long has Melanie been creating art?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question directly asks for the duration, which can be answered if a source states how long Melanie has been creating art. A second query targets the start date explicitly, which is the key high-priority information needed to calculate or verify the duration.
+[Planning] Generated 2 targeted queries
+[Search 1] How long has Melanie been creating art?
+[Search 2] When did Melanie start creating art?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 37 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - Info 1 states Melanie has been into art for seven years as of 2023-09-13, providing both the duration and a reference point. The start date can be derived as approximately 2016-09-13. All required information types are addressed.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub (Server disconnected without sending a response.). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub (Server disconnected without sending a response.). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 6978.58it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 37 memory entries
+  Retrieval time: 5.545s
+  Answer time: 1.539s
+  Total time: 7.084s
+  Answer: Seven years
+  Reference: 7 years
+  F1: 0.500, ROUGE-L: 0.500, BERTScore: 0.985
+
+[Q16] Category 4: What was the poetry reading that Caroline attended about?
+
+[Planning] Analyzing information requirements for: What was the poetry reading that Caroline attended about?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information requirements: Connection error.
+[Planning] Identified 1 information requirements
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate targeted queries: Connection error.
+[Planning] Generated 1 targeted queries
+[Search 1] What was the poetry reading that Caroline attended about?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis failed after 3 attempts: Connection error.
+[Keyword Search] Found 5 results
+[Structured Search] Found 0 results
+[Planning] Found 30 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information completeness: Connection error.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate missing info queries: Connection error.
+[Intelligent Reflection Round 1] Generated 0 targeted queries
+[Intelligent Reflection Round 1] Total results: 30
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information completeness: Connection error.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate missing info queries: Connection error.
+[Intelligent Reflection Round 2] Generated 0 targeted queries
+[Intelligent Reflection Round 2] Total results: 30
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Answer generation attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Answer generation attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Warning: Failed to parse JSON response after 3 attempts: Connection error.
+Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7823.02it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 30 memory entries
+  Retrieval time: 63.899s
+  Answer time: 21.254s
+  Total time: 85.153s
+  Answer: Failed to generate answer
+  Reference: It was a transgender poetry reading where transgender people shared their stories.
+  F1: 0.000, ROUGE-L: 0.000, BERTScore: 0.858
+
+[Q17] Category 4: What do Melanie's family give her?
+
+[Planning] Analyzing information requirements for: What do Melanie's family give her?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information requirements: Connection error.
+[Planning] Identified 1 information requirements
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate targeted queries: Connection error.
+[Planning] Generated 1 targeted queries
+[Search 1] What do Melanie's family give her?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis failed after 3 attempts: Connection error.
+Error during keyword search: Syntax Error: What do Melanie's family give her?
+[Keyword Search] Found 0 results
+[Structured Search] Found 0 results
+[Planning] Found 25 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information completeness: Connection error.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate missing info queries: Connection error.
+[Intelligent Reflection Round 1] Generated 0 targeted queries
+[Intelligent Reflection Round 1] Total results: 25
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information completeness: Connection error.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate missing info queries: Connection error.
+[Intelligent Reflection Round 2] Generated 0 targeted queries
+[Intelligent Reflection Round 2] Total results: 25
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Answer generation attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Answer generation attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Warning: Failed to parse JSON response after 3 attempts: Connection error.
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 25 memory entries
+  Retrieval time: 63.750s
+  Answer time: 20.959s
+  Total time: 84.709s
+  Answer: Failed to generate answer
+  Reference: Strength and motivation
+  F1: 0.000, ROUGE-L: 0.000, BERTScore: 0.000
+
+[Q18] Category 5: What are Melanie's plans for the summer with respect to adoption?
+
+[Planning] Analyzing information requirements for: What are Melanie's plans for the summer with respect to adoption?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information requirements: Connection error.
+[Planning] Identified 1 information requirements
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate targeted queries: Connection error.
+[Planning] Generated 1 targeted queries
+[Search 1] What are Melanie's plans for the summer with respect to adoption?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis failed after 3 attempts: Connection error.
+Error during keyword search: Syntax Error: What are Melanie's plans for the summer with respect to adoption?
+[Keyword Search] Found 0 results
+[Structured Search] Found 0 results
+[Planning] Found 25 unique results (semantic + keyword + structured)
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Category 5 answer generation attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Category 5 answer generation attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Warning: Failed to generate category 5 answer after 3 attempts: Connection error.
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 25 memory entries
+  Retrieval time: 35.083s
+  Answer time: 21.119s
+  Total time: 56.202s
+  Answer: Not mentioned in the conversation
+  Reference: Not mentioned in the conversation
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 0.000
+
+[Q19] Category 5: What does Melanie's necklace symbolize?
+
+[Planning] Analyzing information requirements for: What does Melanie's necklace symbolize?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information requirements: Connection error.
+[Planning] Identified 1 information requirements
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate targeted queries: Connection error.
+[Planning] Generated 1 targeted queries
+[Search 1] What does Melanie's necklace symbolize?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis failed after 3 attempts: Connection error.
+Error during keyword search: Syntax Error: What does Melanie's necklace symbolize?
+[Keyword Search] Found 0 results
+[Structured Search] Found 0 results
+[Planning] Found 25 unique results (semantic + keyword + structured)
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Category 5 answer generation attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Category 5 answer generation attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Warning: Failed to generate category 5 answer after 3 attempts: Connection error.
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 25 memory entries
+  Retrieval time: 36.194s
+  Answer time: 21.080s
+  Total time: 57.274s
+  Answer: Not mentioned in the conversation
+  Reference: Not mentioned in the conversation
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 0.000
+
+[Q20] Category 5: How did Caroline feel while watching the meteor shower?
+
+[Planning] Analyzing information requirements for: How did Caroline feel while watching the meteor shower?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information requirements: Connection error.
+[Planning] Identified 1 information requirements
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate targeted queries: Connection error.
+[Planning] Generated 1 targeted queries
+[Search 1] How did Caroline feel while watching the meteor shower?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis failed after 3 attempts: Connection error.
+[Keyword Search] Found 5 results
+[Structured Search] Found 0 results
+[Planning] Found 30 unique results (semantic + keyword + structured)
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Category 5 answer generation attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Category 5 answer generation attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Warning: Failed to generate category 5 answer after 3 attempts: Connection error.
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 30 memory entries
+  Retrieval time: 35.092s
+  Answer time: 21.175s
+  Total time: 56.267s
+  Answer: Not mentioned in the conversation
+  Reference: Not mentioned in the conversation
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 0.000
+
+================================================================================
+                                  Test Summary                                  
+================================================================================
+
+Timing Statistics:
+  Average retrieval time: 17.973s
+  Average answer time: 6.185s
+  Average total time: 24.158s
+  Total retrieval time: 359.46s
+  Total answer time: 123.70s
+
+Answer Quality Metrics:
+
+Overall Performance:
+  f1                  : 0.5562 (±0.3609)
+  rougeL_f            : 0.5489 (±0.3383)
+  bert_f1             : 0.6950 (±0.4133)
+  sbert_similarity    : 0.7456 (±0.3008)
+
+Per-Category Performance:
+  Category 1: F1=0.3474 (n=6)
+  Category 2: F1=0.7120 (n=5)
+  Category 4: F1=0.4134 (n=6)
+  Category 5: F1=1.0000 (n=3)
+
+Results saved to /Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/experiment-20261108-153818-44119/baseline-5662/results.json
+
+================================================================================
+                                 Test Complete!                                 
+================================================================================
+

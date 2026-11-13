@@ -1,0 +1,65 @@
+W1113 14:03:07.131000 75563 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+[nltk_data] Error loading punkt: The read operation timed out
+Traceback (most recent call last):
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/run.py", line 164, in <module>
+    main()
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/run.py", line 160, in main
+    args.handler(args)
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/run.py", line 132, in execute
+    runpy.run_path(str(ROOT / "test_locomo10.py"), run_name="__main__")
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/test_locomo10.py", line 28, in <module>
+    nltk.download('wordnet', quiet=True)
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/nltk/downloader.py", line 1554, in download
+    for msg in self.incr_download(
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/nltk/downloader.py", line 980, in incr_download
+    for msg in self.incr_download(info_or_id, download_dir, force, (), extract):
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/nltk/downloader.py", line 999, in incr_download
+    info = self._info_or_id(info_or_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/nltk/downloader.py", line 944, in _info_or_id
+    return self.info(info_or_id)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/nltk/downloader.py", line 1894, in info
+    self._update_index()
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/nltk/downloader.py", line 1813, in _update_index
+    urlopen(self._url, timeout=NETWORK_TIMEOUT),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/nltk/pathsec.py", line 2076, in urlopen
+    return opener.open(url, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/nltk/pathsec.py", line 1960, in https_open
+    return self.do_open(_SafeHTTPSConnection, req, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/urllib/request.py", line 1352, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/http/client.py", line 1443, in getresponse
+    response.begin()
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/http/client.py", line 337, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/http/client.py", line 298, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/ssl.py", line 1326, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/ssl.py", line 1178, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

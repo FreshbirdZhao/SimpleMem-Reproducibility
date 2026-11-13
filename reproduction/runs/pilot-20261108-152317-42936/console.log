@@ -1,0 +1,202 @@
+W1108 15:23:23.329000 42961 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+[nltk_data] Error loading punkt: Security Violation [pathsec.urlopen]:
+[nltk_data]     SSRF attempt to restricted IP 198.18.0.17
+[nltk_data] Error loading wordnet: Security Violation
+[nltk_data]     [pathsec.urlopen]: SSRF attempt to restricted IP
+[nltk_data]     198.18.0.17
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8280.40it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Initializing SimpleMem system...
+============================================================
+Initializing SimpleMem System
+============================================================
+Using custom OpenAI base URL: https://api.deepseek.com/v1
+Loading embedding model: Qwen/Qwen3-Embedding-0.6B
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6322.28it/s]
+/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/utils/embedding.py:82: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dimension = self.model.get_sentence_embedding_dimension()
+SentenceTransformer model loaded with dimension: 1024
+Created new table: memory_entries
+
+Clearing existing database...
+Created new table: memory_entries
+Database cleared
+
+System initialization complete!
+============================================================
+
+================================================================================
+                         SimpleMem LoComo10 Dataset Test                        
+================================================================================
+
+Loading dataset from /Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/pilot-20261108-152317-42936/subset/subset.json...
+
+Sample 0:
+  Total QAs: 2
+  QAs with image evidence: 2
+
+Overall Statistics:
+Total QAs: 2
+Total QAs with image evidence: 2
+Average QAs per sample: 2.00
+Min QAs in a sample: 2
+Max QAs in a sample: 2
+Created new table: memory_entries
+Database cleared
+
+================================================================================
+Testing Sample 0
+================================================================================
+Adding 419 dialogues to memory...
+
+Processing window: 40 dialogues (processed 0 so far)
+FTS index created (Tantivy mode)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 40 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 80 so far)
+Added 38 memory entries
+Generated 38 memory entries
+
+Processing window: 40 dialogues (processed 120 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 160 so far)
+Added 29 memory entries
+Generated 29 memory entries
+
+Processing window: 40 dialogues (processed 200 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 240 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 280 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 320 so far)
+Added 42 memory entries
+Generated 42 memory entries
+
+Processing window: 40 dialogues (processed 360 so far)
+Added 43 memory entries
+Generated 43 memory entries
+
+Processing remaining dialogues: 39 (fallback mode)
+Added 39 memory entries
+Generated 39 memory entries
+Memory building time: 266.11s
+
+[Q1] Category 2: When did Melanie paint a sunrise?
+
+[Planning] Analyzing information requirements for: When did Melanie paint a sunrise?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question already captures the core temporal and event identification needs. To disambiguate Melanie and confirm the sunrise painting event, a second query adds context about the painting. Two queries are minimal and target distinct information requirements.
+[Planning] Generated 2 targeted queries
+[Search 1] When did Melanie paint a sunrise?
+[Search 2] Melanie sunrise painting
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 35 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required information types are addressed: Melanie is identified as the person, it is confirmed she painted a sunrise (lake sunrise painting), and the temporal information is provided as 2022. Although the exact date is not given, the year satisfies the temporal requirement for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8509.40it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 35 memory entries
+  Retrieval time: 7.272s
+  Answer time: 1.224s
+  Total time: 8.496s
+  Answer: In 2022
+  Reference: 2022
+  F1: 0.667, ROUGE-L: 0.667, BERTScore: 0.919
+
+[Q2] Category 4: What does Caroline's necklace symbolize?
+
+[Planning] Analyzing information requirements for: What does Caroline's necklace symbolize?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original query is broad and may not identify the specific work or provide detailed symbolism. A second query adds 'symbolism' and 'meaning' to target the symbolic meaning and textual evidence requirements. Two queries are sufficient: one for broad context and one for focused symbolic analysis.
+[Planning] Generated 2 targeted queries
+[Search 1] What does Caroline's necklace symbolize?
+[Search 2] Caroline necklace symbolism meaning in [work]
+[Keyword Search] Found 5 results
+[Structured Search] Found 3 results
+[Planning] Found 40 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - All required information types are addressed: contextual identification is provided (Caroline is a character in a narrative involving conversations with Melanie, and the necklace is described as a gift from her grandmother in Sweden); symbolic meaning is explicitly stated (the necklace stands for love, faith, and strength and reminds Caroline of her roots and family support); and textual evidence is present (Info 2 directly describes the necklace and its meaning, and Info 4 provides a visual description of the necklace with a cross and heart). The information is sufficient to comprehensively answer what Caroline's necklace symbolizes.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7440.13it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 40 memory entries
+  Retrieval time: 8.853s
+  Answer time: 1.107s
+  Total time: 9.960s
+  Answer: Love, faith, and strength; reminds her of her roots and family support
+  Reference: love, faith, and strength
+  F1: 0.429, ROUGE-L: 0.500, BERTScore: 0.928
+
+================================================================================
+                                  Test Summary                                  
+================================================================================
+
+Timing Statistics:
+  Average retrieval time: 8.062s
+  Average answer time: 1.166s
+  Average total time: 9.228s
+  Total retrieval time: 16.12s
+  Total answer time: 2.33s
+
+Answer Quality Metrics:
+
+Overall Performance:
+  f1                  : 0.5476 (±0.1684)
+  rougeL_f            : 0.5833 (±0.1179)
+  bert_f1             : 0.9236 (±0.0062)
+  sbert_similarity    : 0.7702 (±0.1164)
+
+Per-Category Performance:
+  Category 2: F1=0.6667 (n=1)
+  Category 4: F1=0.4286 (n=1)
+
+Results saved to /Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/pilot-20261108-152317-42936/baseline/results.json
+
+================================================================================
+                                 Test Complete!                                 
+================================================================================
+

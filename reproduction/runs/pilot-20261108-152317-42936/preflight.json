@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-08",
+  "dataset_repository": "https://github.com/snap-research/locomo",
+  "dataset_commit": "3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376",
+  "dataset_path": "data/locomo10.json",
+  "dataset_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "pinned_dataset_matches_local": true,
+  "provider_base_url": "https://api.deepseek.com/v1",
+  "requested_model": "deepseek-chat",
+  "preflight_response_model": "deepseek-flash",
+  "preflight_http_status": 200,
+  "preflight_usage_only": {
+    "prompt_tokens": 6,
+    "completion_tokens": 1,
+    "total_tokens": 7
+  },
+  "pilot_api_usage_measured": false,
+  "hardware_platform": "macOS-27.0.1-arm64-arm-64bit",
+  "lancedb_version": "0.25.3",
+  "tantivy_index_and_search_smoke_check": "passed",
+  "nltk_local_resources": ["punkt", "punkt_tab", "wordnet"],
+  "notes": [
+    "Provider alias mapping was observed on the preflight request, not recorded for every pilot request.",
+    "Interrupted attempts made additional API calls; their usage and cost were not collected.",
+    "NLTK online resource checks reject the proxy synthetic IP; installed resources remain usable."
+  ]
+}

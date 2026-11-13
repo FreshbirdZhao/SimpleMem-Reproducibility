@@ -1,0 +1,948 @@
+W1113 14:06:07.270000 75847 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8234.16it/s]
+Initializing SimpleMem system...
+============================================================
+Initializing SimpleMem System
+============================================================
+Using custom OpenAI base URL: https://api.deepseek.com/v1
+Loading embedding model: Qwen/Qwen3-Embedding-0.6B
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'Qwen/Qwen3-Embedding-0.6B'.
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  68%|██████▊   | 210/310 [00:00<00:00, 2095.01it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 2338.21it/s]
+/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/utils/embedding.py:82: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dimension = self.model.get_sentence_embedding_dimension()
+SentenceTransformer model loaded with dimension: 1024
+Created new table: memory_entries
+
+Clearing existing database...
+Created new table: memory_entries
+Database cleared
+
+System initialization complete!
+============================================================
+
+================================================================================
+                         SimpleMem LoComo10 Dataset Test                        
+================================================================================
+
+Loading dataset from /Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/recovered-20261113-060600-75832/subset/subset.json...
+
+Sample 0:
+  Total QAs: 20
+  QAs with image evidence: 20
+
+Overall Statistics:
+Total QAs: 20
+Total QAs with image evidence: 20
+Average QAs per sample: 20.00
+Min QAs in a sample: 20
+Max QAs in a sample: 20
+Created new table: memory_entries
+Database cleared
+
+================================================================================
+Testing Sample 0
+================================================================================
+Adding 419 dialogues to memory...
+
+Processing window: 40 dialogues (processed 0 so far)
+FTS index created (Tantivy mode)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 40 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 80 so far)
+Added 38 memory entries
+Generated 38 memory entries
+
+Processing window: 40 dialogues (processed 120 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 160 so far)
+Added 25 memory entries
+Generated 25 memory entries
+
+Processing window: 40 dialogues (processed 200 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 240 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 280 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 320 so far)
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 360 so far)
+Added 42 memory entries
+Generated 42 memory entries
+
+Processing remaining dialogues: 39 (fallback mode)
+Added 39 memory entries
+Generated 39 memory entries
+Memory building time: 261.39s
+
+[Q1] Category 2: When did Melanie paint a sunrise?
+
+[Planning] Analyzing information requirements for: When did Melanie paint a sunrise?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question directly asks for the temporal information, so it serves as the primary query. A second query is added to confirm Melanie as the artist of a sunrise painting, addressing the identification requirement.
+[Planning] Generated 2 targeted queries
+[Search 1] When did Melanie paint a sunrise?
+[Search 2] Melanie sunrise painting artist
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 35 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required temporal information is provided in Info 1, which states Melanie painted the lake sunrise painting in 2022. The identification requirement is also satisfied because Info 1 and Info 13 confirm Melanie as the artist of a sunrise painting over a lake. Although other sunset paintings are mentioned, the specific sunrise painting's date and artist are clearly addressed.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 5078.32it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 35 memory entries
+  Retrieval time: 5.381s
+  Answer time: 1.188s
+  Total time: 6.569s
+  Answer: In 2022
+  Reference: 2022
+  F1: 0.667, ROUGE-L: 0.667, BERTScore: 0.919
+
+[Q2] Category 2: When did Caroline meet up with her friends, family, and mentors?
+
+[Planning] Analyzing information requirements for: When did Caroline meet up with her friends, family, and mentors?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is already specific and covers all key entities and the temporal requirement. A single query using the original wording should retrieve the meetup event, its date/time, and contextual details, satisfying all high and medium priority information needs without redundancy.
+[Planning] Generated 1 targeted queries
+[Search 1] When did Caroline meet up with her friends, family, and mentors?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 35 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 70% - The information identifies a meetup involving Caroline's friends, family, and mentors via a photo shared on 2023-06-09, described as from 'the week before.' However, the exact date/time of the meetup is not specified, only a relative timeframe. Contextual details are minimal (no location or occasion). Thus, the date/time requirement is not fully satisfied, and context is only partially addressed.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The original question asks for the date/time when Caroline met up with her friends, family, and mentors. Available information indicates a meetup occurred the week before 2023-06-09 (so between 2023-06-02 and 2023-06-08), but the exact date and context (location, occasion) are missing. Additionally, it is unclear whether 'mentors' were present at that specific meetup or if the question refers to a different event involving all three groups.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Caroline meetup friends family mentors week before June 9 2023 date
+[Additional Search 2] Caroline photo family friends meetup June 2023 exact date location
+[Additional Search 3] Caroline mentors friends family gathering June 2023 occasion
+[Intelligent Reflection Round 1] Total results: 72
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 40% - The question asks when Caroline met up with her friends, family, and mentors. The available information mentions a photo of family and friends from a meetup the week before 2023-06-09, but does not specify an exact date or time. Additionally, there is no clear indication that mentors were present at that meetup. Other events (e.g., pride parade, biking with friends, mentorship program) involve subsets of the group but not all three together. Thus, the specific event is not clearly identified, and the date/time is only approximate, leaving critical gaps.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The original question asks when Caroline met up with her friends, family, and mentors. The available information mentions a meetup with family and friends the week before 2023-06-09 (Info 1), but the exact date and context (location, occasion) are missing. Additionally, it is unclear if mentors were present at that meetup or if there was a separate meetup involving mentors. The specific event and its date/time need to be identified.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Caroline meetup friends family mentors date
+[Additional Search 2] Caroline photo family friends meetup week before June 9 2023
+[Additional Search 3] Caroline mentors meetup event details
+[Intelligent Reflection Round 2] Total results: 81
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 6396.69it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 81 memory entries
+  Retrieval time: 11.455s
+  Answer time: 1.354s
+  Total time: 12.809s
+  Answer: The week before 9 June 2023
+  Reference: The week before 9 June 2023
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 1.000
+
+[Q3] Category 1: What books has Melanie read?
+
+[Planning] Analyzing information requirements for: What books has Melanie read?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and ambiguous due to the common name 'Melanie'. The first query targets identity disambiguation by searching for 'Melanie' in contexts where reading lists are commonly shared (e.g., book lists, reading challenges). The second query directly targets the reading history by combining 'Melanie' with terms like 'books read' and 'reading list', which should surface sources containing the required list.
+[Planning] Generated 3 targeted queries
+[Search 1] What books has Melanie read?
+[Search 2] Melanie books read list
+[Search 3] Melanie reading list books
+[Keyword Search] Found 1 results
+[Structured Search] Found 5 results
+[Planning] Found 41 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 60% - The information identifies Melanie and provides some reading history (Charlotte's Web, an unnamed book read in 2022, and a book Caroline recommended), but it does not provide a comprehensive list of books Melanie has read. The source is implied through conversations with Caroline, but the reading history is incomplete and lacks specific titles for some books.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The identity of Melanie is not fully disambiguated (only first name known, context suggests a personal conversation with Caroline). The reading history is partially known: she loved 'Charlotte's Web' as a child, read a book in 2022 (cover with gold coin, title unknown), and is currently reading a book Caroline recommended (title unknown). Missing are the titles of the 2022 book and the recommended book, as well as any other books she has read. The source is personal conversation, but additional sources could provide more complete reading history.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Melanie book cover gold coin 2022 read pursue dreams
+[Additional Search 2] Melanie reading book Caroline recommended October 2023
+[Additional Search 3] Melanie favorite childhood book Charlotte's Web reading list
+[Intelligent Reflection Round 1] Total results: 69
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 40% - The identity of Melanie is partially established through context (a person interacting with Caroline), but no full name or unique identifier is provided. Some reading history is available: Melanie read Charlotte's Web as a child, read a book in 2022 (title not given, only a photo of a cover with a gold coin), and is currently reading a book Caroline recommended (title not specified). However, the list is incomplete and lacks specific titles for most books. The source is implied to be personal conversations between Melanie and Caroline, but no formal or comprehensive source is cited. Critical gaps remain: the full list of books Melanie has read is not provided, and key titles are missing.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information provides some books Melanie has read (Charlotte's Web, a book read in 2022 with a gold coin on the cover, and a book recommended by Caroline that she is currently reading), but the specific titles of the 2022 book and the Caroline-recommended book are not given. Additionally, the identity of Melanie is not fully disambiguated (e.g., full name or context), and the source of the reading history is only implied through conversation snippets. To answer 'What books has Melanie read?' completely, we need to identify the specific Melanie and obtain a more comprehensive list of books she has read, including the missing titles.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Melanie book cover gold coin 2022 pursue dreams
+[Additional Search 2] Melanie reading book recommended by Caroline October 2023
+[Additional Search 3] Melanie Charlotte's Web favorite childhood book reading list
+[Intelligent Reflection Round 2] Total results: 76
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 6718.85it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 76 memory entries
+  Retrieval time: 12.251s
+  Answer time: 1.039s
+  Total time: 13.290s
+  Answer: Charlotte's Web, the book Caroline recommended, and an unnamed book read in 2022
+  Reference: "Nothing is Impossible", "Charlotte's Web"
+  F1: 0.000, ROUGE-L: 0.300, BERTScore: 0.887
+
+[Q4] Category 1: What does Melanie do to destress?
+
+[Planning] Analyzing information requirements for: What does Melanie do to destress?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is ambiguous because 'Melanie' could refer to many individuals. The first query uses the original wording to capture any direct answers. The second query adds context terms ('character', 'interview', 'biography') to disambiguate Melanie and find sources describing her stress-relief activities, satisfying the identity and source context requirements.
+[Planning] Generated 2 targeted queries
+[Search 1] What does Melanie do to destress?
+[Search 2] Melanie destress stress relief activities character interview biography
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 39 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The provided information identifies Melanie as a specific individual (a mother with kids, work, and a friend named Caroline) and extensively describes her destressing methods, including running, pottery, painting, reading, playing violin/clarinet, camping, and family time. The source context is clear from the conversational exchanges with Caroline. All required information types are addressed with sufficient detail for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8021.12it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 39 memory entries
+  Retrieval time: 5.532s
+  Answer time: 1.416s
+  Total time: 6.948s
+  Answer: Running, pottery, painting, reading, playing violin, and nature/camping
+  Reference: Running, pottery
+  F1: 0.400, ROUGE-L: 0.364, BERTScore: 0.904
+
+[Q5] Category 2: When did Caroline go to the adoption meeting?
+
+[Planning] Analyzing information requirements for: When did Caroline go to the adoption meeting?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question already captures both key entities and the temporal requirement, so a single focused query is sufficient to retrieve the date or time Caroline attended the adoption meeting.
+[Planning] Generated 1 targeted queries
+[Search 1] When did Caroline go to the adoption meeting?
+[Keyword Search] Found 5 results
+[Structured Search] Found 0 results
+[Planning] Found 28 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 50% - The available information does not specify the date or time when Caroline attended an adoption meeting. While Info 11 mentions Caroline went to a council meeting for adoption on Friday 2023-07-14, this is a council meeting, not explicitly an adoption meeting. No other information confirms a specific adoption meeting event involving Caroline or its date/time. Thus, the temporal information type is not addressed, and the event identification is only partially addressed with ambiguity.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information does not specify a date or time when Caroline attended an adoption meeting. Info 11 mentions a council meeting for adoption on Friday 2023-07-14, but it is unclear if this is the 'adoption meeting' referred to. No other adoption meeting event is explicitly identified. The missing information is the exact date/time of the adoption meeting Caroline attended and confirmation of the specific event.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Caroline adoption meeting date
+[Additional Search 2] Caroline attended adoption meeting
+[Additional Search 3] Caroline adoption meeting 2023
+[Intelligent Reflection Round 1] Total results: 39
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 20% - The available information does not specify when Caroline attended an adoption meeting. Info 11 mentions a council meeting for adoption on 2023-07-14, but this is not clearly the same as an adoption meeting, and no other info provides a date for an adoption meeting. The event identification is also ambiguous, as the council meeting may or may not be the adoption meeting referenced.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The exact date or time when Caroline attended the adoption meeting is not provided. Info 11 mentions a council meeting for adoption on Friday 2023-07-14, but it is unclear if this is the adoption meeting referred to. No other adoption meeting event is explicitly identified.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Caroline adoption meeting date
+[Additional Search 2] Caroline attended adoption meeting
+[Additional Search 3] Caroline adoption meeting 2023
+[Intelligent Reflection Round 2] Total results: 39
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7070.70it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 39 memory entries
+  Retrieval time: 9.469s
+  Answer time: 0.889s
+  Total time: 10.358s
+  Answer: 14 July 2023
+  Reference: The friday before 15 July 2023
+  F1: 0.444, ROUGE-L: 0.444, BERTScore: 0.919
+
+[Q6] Category 1: What types of pottery have Melanie and her kids made?
+
+[Planning] Analyzing information requirements for: What types of pottery have Melanie and her kids made?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question is already specific and targets both required information types: the list of pottery types and the association with Melanie and her kids. A single query is sufficient to retrieve the needed information.
+[Planning] Generated 1 targeted queries
+[Search 1] What types of pottery have Melanie and her kids made?
+[Keyword Search] Found 4 results
+[Structured Search] Found 5 results
+[Planning] Found 34 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The available information identifies specific pottery types made by Melanie and her kids: pots (Info 3), a cup with a dog face (Info 1), bowls (Infos 4, 11, 12, 21, 23), and a plate (Info 6). The association is confirmed: Melanie and her kids all made pots (Info 3), the kids made the dog face cup (Info 1), and Melanie made the bowls and plate (Infos 4, 6, 11, 12, 21, 23). Thus both required information types are addressed with sufficient detail for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 10507.84it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 34 memory entries
+  Retrieval time: 6.100s
+  Answer time: 1.019s
+  Total time: 7.119s
+  Answer: Pots and a cup with a dog face on it
+  Reference: bowls, cup
+  F1: 0.182, ROUGE-L: 0.167, BERTScore: 0.886
+
+[Q7] Category 1: What are Melanie's pets' names?
+
+[Planning] Analyzing information requirements for: What are Melanie's pets' names?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and may refer to any Melanie. To efficiently gather all required information, we need to first identify which Melanie is relevant (entity identification) and then find her pets' names (ownership and attribute values). Query 1 uses the original question to capture any direct answers. Query 2 adds context to disambiguate Melanie and target pet names, covering both entity identification and attribute value requirements.
+[Planning] Generated 2 targeted queries
+[Search 1] What are Melanie's pets' names?
+[Search 2] Melanie pets names
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 38 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The available information identifies Melanie as the person interacting with Caroline, establishes her ownership of pets (dog, cat, and another cat), and provides the names of her pets: Luna, Oliver, and Bailey. All required information types are addressed.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 6315.16it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 38 memory entries
+  Retrieval time: 6.288s
+  Answer time: 1.054s
+  Total time: 7.341s
+  Answer: Luna, Oliver, and Bailey
+  Reference: Oliver, Luna, Bailey
+  F1: 0.857, ROUGE-L: 0.571, BERTScore: 0.944
+
+[Q8] Category 2: When did Caroline draw a self-portrait?
+
+[Planning] Analyzing information requirements for: When did Caroline draw a self-portrait?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is ambiguous because 'Caroline' could refer to multiple people. The first query targets identity disambiguation by including 'self-portrait' and 'artist' to narrow down which Caroline is relevant. The second query directly addresses the temporal requirement by asking when Caroline drew the self-portrait, which should retrieve the event date and source context.
+[Planning] Generated 2 targeted queries
+[Search 1] Caroline self-portrait artist
+[Search 2] When did Caroline draw a self-portrait?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 45 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The identity of Caroline is sufficiently disambiguated as a trans woman who creates art, based on multiple consistent references. The event date is provided in Info 1, which states the self-portrait was made 'last week' relative to 2023-08-23, placing it around mid-August 2023. The source context is the conversation with Melanie, which confirms the date and details. All required information types are addressed.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 17936.40it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 45 memory entries
+  Retrieval time: 5.690s
+  Answer time: 1.227s
+  Total time: 6.918s
+  Answer: About a week before 23 August 2023 (mid-August 2023)
+  Reference: The week before 23 August 2023
+  F1: 0.667, ROUGE-L: 0.625, BERTScore: 0.942
+
+[Q9] Category 1: What are some changes Caroline has faced during her transition journey?
+
+[Planning] Analyzing information requirements for: What are some changes Caroline has faced during her transition journey?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original query covers the core information need (changes during Caroline's transition). To address the high-priority identity/context requirement, a second query is added to clarify who Caroline is and the nature of her transition. This minimal set of two queries efficiently targets both the specific changes and the contextual identity.
+[Planning] Generated 2 targeted queries
+[Search 1] What are some changes Caroline has faced during her transition journey?
+[Search 2] Who is Caroline and what is the context of her transition journey?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 39 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 95% - All required information types are addressed. Identity is established as Caroline is a transgender woman who transitioned three years prior. Specific changes are documented across physical (changing body explored through art), emotional (fear replaced by freedom, happiness, pride), social (relationships changed, some friends lost, more genuine connections), and community involvement (LGBTQ advocacy, support groups). Sources are provided through dated conversations with Melanie. The information is sufficient for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 10814.86it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 39 memory entries
+  Retrieval time: 5.672s
+  Answer time: 1.777s
+  Total time: 7.449s
+  Answer: Changed relationships, a changing body, and an upsetting hike encounter with religious conservatives
+  Reference: Changes to her body, losing unsupportive friends
+  F1: 0.100, ROUGE-L: 0.200, BERTScore: 0.889
+
+[Q10] Category 2: When did Melanie's family go on a roadtrip?
+
+[Planning] Analyzing information requirements for: When did Melanie's family go on a roadtrip?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question is already specific and directly targets the temporal information about Melanie's family roadtrip. A single query is sufficient to retrieve the required temporal reference and event confirmation.
+[Planning] Generated 1 targeted queries
+[Search 1] When did Melanie's family go on a roadtrip?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 35 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required temporal information is provided: Info 2 and Info 14 state the road trip occurred during the weekend before 2023-10-20, which is a specific temporal reference. The event is clearly identified as a road trip involving Melanie's family, with details about her son's accident. Both high-priority information types are addressed.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 9542.27it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 35 memory entries
+  Retrieval time: 4.878s
+  Answer time: 1.000s
+  Total time: 5.879s
+  Answer: The weekend before 20 October 2023 (14-15 October 2023)
+  Reference: The weekend before 20 October 2023
+  F1: 0.857, ROUGE-L: 0.750, BERTScore: 0.951
+
+[Q11] Category 1: What items has Melanie bought?
+
+[Planning] Analyzing information requirements for: What items has Melanie bought?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The question is a simple factual lookup about items Melanie bought. A single query combining the entity and the purchase relation is sufficient to retrieve the needed information; no additional queries are necessary.
+[Planning] Generated 1 targeted queries
+[Search 1] What items has Melanie bought?
+[Keyword Search] Found 0 results
+[Structured Search] Found 5 results
+[Planning] Found 29 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 50% - The person Melanie is clearly identified across multiple interactions, satisfying entity identification. However, the purchase records are only partially addressed: Melanie mentions 'new shoes' (Info 1, 5, 7), which indicates she bought them, but no other purchased items are explicitly stated. Other items like a necklace, bowl, plate, and pottery creations are discussed but not confirmed as purchases by Melanie. Thus, the list of items Melanie has bought is incomplete.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information mentions that Melanie 'just got some new shoes' and that the shoes are for running, but it does not provide a comprehensive list of items Melanie has bought. Other items mentioned (bowl, plate, necklace, pottery creations) are either made by Melanie or belong to Caroline. The missing information is a complete list of Melanie's purchases.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Melanie purchases items bought
+[Additional Search 2] Melanie bought new shoes running
+[Additional Search 3] Melanie shopping list purchases
+[Intelligent Reflection Round 1] Total results: 58
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 50% - The person Melanie is clearly identified, but the available information does not provide a comprehensive list of items Melanie has bought. Only one purchase is explicitly mentioned: new shoes (Info 1, 5, 7). Other items like pottery, paintings, and pets are made or acquired but not described as bought. Thus, the purchase records requirement is only partially addressed.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information mentions several items Melanie has acquired or made, such as new shoes, pottery creations (bowls, plate), and paintings, but it does not provide a comprehensive list of items Melanie has bought. The question asks for items Melanie has bought, which may include purchases beyond what is explicitly stated. Missing information includes any explicit purchase records or mentions of items Melanie bought (e.g., shoes, art supplies, pets, etc.). Additionally, entity identification is partially satisfied as Melanie is referenced, but the specific purchases are not fully listed.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Melanie bought items purchase records
+[Additional Search 2] Melanie new shoes bought purchase
+[Additional Search 3] Melanie pottery supplies bought purchase
+[Intelligent Reflection Round 2] Total results: 80
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7535.42it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 80 memory entries
+  Retrieval time: 10.003s
+  Answer time: 0.826s
+  Total time: 10.828s
+  Answer: New running shoes
+  Reference: Figurines, shoes
+  F1: 0.400, ROUGE-L: 0.400, BERTScore: 0.881
+
+[Q12] Category 4: What does Caroline's necklace symbolize?
+
+[Planning] Analyzing information requirements for: What does Caroline's necklace symbolize?
+[Planning] Identified 4 information requirements
+[Planning] Strategy: The original question is broad and assumes a specific Caroline. To efficiently gather all required information, we need one query to identify the specific work and character (contextual identification) and another to directly address the symbolism with narrative context. The original query is included as a baseline, but the targeted queries are more specific to avoid ambiguity.
+[Planning] Generated 3 targeted queries
+[Search 1] What does Caroline's necklace symbolize?
+[Search 2] Caroline necklace symbolism in literature or film
+[Search 3] Caroline necklace meaning story context
+[Keyword Search] Found 5 results
+[Structured Search] Found 3 results
+[Planning] Found 42 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - All required information types are addressed: contextual identification is provided by Info 1 (Caroline, necklace from grandma in Sweden), descriptive details by Info 4 (necklace with a cross and a heart), narrative context by Info 1 (gift from grandma when Caroline was young, reminds her of roots and family support), and symbolic interpretation by Info 1 (stands for love, faith, and strength). The information is sufficient for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7075.94it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 42 memory entries
+  Retrieval time: 6.153s
+  Answer time: 1.102s
+  Total time: 7.255s
+  Answer: Love, faith, and strength; a reminder of her roots and family support
+  Reference: love, faith, and strength
+  F1: 0.400, ROUGE-L: 0.500, BERTScore: 0.931
+
+[Q13] Category 4: What motivated Caroline to pursue counseling?
+
+[Planning] Analyzing information requirements for: What motivated Caroline to pursue counseling?
+[Planning] Identified 4 information requirements
+[Planning] Strategy: The original question directly asks for Caroline's motivation to pursue counseling, covering stated reasons and personal background. A second query targeting her personal story or journey into counseling captures background, values, and inspirational factors, ensuring comprehensive coverage with minimal overlap.
+[Planning] Generated 2 targeted queries
+[Search 1] What motivated Caroline to pursue counseling?
+[Search 2] Caroline personal story journey into counseling profession
+[Keyword Search] Found 1 results
+[Structured Search] Found 5 results
+[Planning] Found 39 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - All required information types are addressed. Caroline's personal background is covered by her mental health struggles and the support she received (Info 10, 11, 12). Stated reasons are explicit: she wants to help people who have gone through similar experiences (Info 2, 5, 10, 12). Values and interests are evident in her passion for helping others, creating a safe place, and promoting understanding (Info 4, 7, 12, 29). Inspirational figures or events include the parade and community interaction (Info 8), supportive friends/family/mentors (Info 23, 24), and the LGBTQ+ support group (Info 39). The information is sufficient for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8157.35it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 39 memory entries
+  Retrieval time: 6.621s
+  Answer time: 1.463s
+  Total time: 8.083s
+  Answer: Her own mental health struggles and the support she received inspired her to help others on similar journeys.
+  Reference: her own journey and the support she received, and how counseling improved her life
+  F1: 0.483, ROUGE-L: 0.500, BERTScore: 0.909
+
+[Q14] Category 4: What do sunflowers represent according to Caroline?
+
+[Planning] Analyzing information requirements for: What do sunflowers represent according to Caroline?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and may not surface the specific Caroline or her statement. Query 1 targets the attribution and statement directly by pairing 'Caroline' with 'sunflowers represent' to find explicit symbolic interpretations. Query 2 adds 'symbolize' and 'meaning' to capture alternative phrasing and context (e.g., book, interview) that may identify the specific Caroline and source.
+[Planning] Generated 3 targeted queries
+[Search 1] What do sunflowers represent according to Caroline?
+[Search 2] Caroline sunflowers represent
+[Search 3] Caroline sunflowers symbolize meaning
+[Keyword Search] Found 3 results
+[Structured Search] Found 5 results
+[Planning] Found 44 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - All required information types are addressed: Info 1 provides Caroline's explicit statement that sunflowers mean warmth and happiness; the context is a conversation with Melanie on 2023-07-15, and Caroline is identified by name and context (a person discussing flowers, art, and personal journey). No critical gaps remain.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8593.84it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 44 memory entries
+  Retrieval time: 6.755s
+  Answer time: 0.584s
+  Total time: 7.338s
+  Answer: Warmth and happiness
+  Reference: warmth and happiness
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 0.949
+
+[Q15] Category 4: How long has Melanie been creating art?
+
+[Planning] Analyzing information requirements for: How long has Melanie been creating art?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question directly asks for the duration, which requires the start time and current reference. A second query targeting Melanie's art background or biography will help retrieve the start time and contextual details (e.g., when she began creating art, continuous vs. intermittent). Two queries are minimal and non-redundant.
+[Planning] Generated 2 targeted queries
+[Search 1] How long has Melanie been creating art?
+[Search 2] Melanie artist biography when did she start creating art
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 41 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required temporal information is present: Melanie stated she has been into art for seven years as of 2023-09-13, providing both the start reference (approximately 2016) and the current reference date to calculate duration. Contextual details about her art involvement (painting, pottery, therapeutic benefits, a break due to injury) are also provided, sufficient to answer how long she has been creating art.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8060.83it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 41 memory entries
+  Retrieval time: 5.705s
+  Answer time: 0.861s
+  Total time: 6.566s
+  Answer: Seven years
+  Reference: 7 years
+  F1: 0.500, ROUGE-L: 0.500, BERTScore: 0.985
+
+[Q16] Category 4: What was the poetry reading that Caroline attended about?
+
+[Planning] Analyzing information requirements for: What was the poetry reading that Caroline attended about?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question already captures both key entities and the core information need (event identification and topic). A single query is sufficient to retrieve the specific poetry reading and its subject matter. Adding a second query with 'theme' or 'topic' could help if the original results are ambiguous, but the minimal set is one focused query.
+[Planning] Generated 1 targeted queries
+[Search 1] What was the poetry reading that Caroline attended about?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 35 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required information types are fully addressed. Info 4 explicitly identifies the poetry reading as a transgender poetry reading where transgender people shared their stories through poetry, and describes its theme as self-expression, identity celebration, and empowerment. Info 3 and Info 21 provide additional context about the event being powerful and inspiring. No critical gaps remain.
+[Intelligent Reflection Round 1] Information is complete
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7541.38it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 35 memory entries
+  Retrieval time: 4.840s
+  Answer time: 1.187s
+  Total time: 6.027s
+  Answer: A transgender poetry reading where transgender people shared their stories through poetry
+  Reference: It was a transgender poetry reading where transgender people shared their stories.
+  F1: 0.857, ROUGE-L: 0.833, BERTScore: 0.973
+
+[Q17] Category 4: What do Melanie's family give her?
+
+[Planning] Analyzing information requirements for: What do Melanie's family give her?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is ambiguous because 'Melanie' could refer to multiple contexts. The first query uses the original phrasing to capture direct answers. The second query adds 'story' or 'movie' to help identify the specific Melanie and the context of the gift, addressing the high-priority identification requirement.
+[Planning] Generated 2 targeted queries
+[Search 1] What do Melanie's family give her?
+[Search 2] Melanie family gives her story movie
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 39 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 60% - The information identifies Melanie and provides extensive context about her family's emotional support, love, and motivation. However, it does not specify a concrete object, gesture, or event that her family gives her in response to the question. The required 'event/action' type is only partially addressed through general statements about support and love, lacking a specific answer such as a gift or particular action.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The question asks what Melanie's family gives her. The available information is from a conversation between Melanie and Caroline, where Melanie describes her family as a support, motivation, and source of love and strength. However, the specific object, gesture, or support that her family gives her is not explicitly stated. The missing information is the concrete item or action that Melanie's family gives her, which may be found in the original source (e.g., a story, movie, or real-life context). The identification of Melanie is also unclear, as the context suggests a personal conversation, but the question might refer to a fictional character. Search queries should target both the specific giving event and the identification of Melanie.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Melanie family gives her gift story
+[Additional Search 2] Melanie family gives her support motivation
+[Additional Search 3] Melanie character family gives her
+[Intelligent Reflection Round 1] Total results: 54
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 60% - The information identifies Melanie and provides extensive context about her family's support, love, and motivation, but it does not specify a concrete object, gesture, or event that Melanie's family gives her. The question asks 'What do Melanie's family give her?' and the available info only describes abstract support and love, not a specific gift or action. Thus, the event/action type is not fully addressed.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information describes Melanie's family as a source of love, support, motivation, and joy, but does not specify a particular object or gesture that her family gives her. The question likely refers to a specific context (e.g., a story or event) where Melanie receives something tangible. The missing information is the identification of that context and the specific item or action.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Melanie family gives her gift story
+[Additional Search 2] Melanie family gives her present movie
+[Additional Search 3] Melanie family gives her birthday
+[Intelligent Reflection Round 2] Total results: 55
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8350.14it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 55 memory entries
+  Retrieval time: 12.514s
+  Answer time: 1.051s
+  Total time: 13.565s
+  Answer: Support, love, motivation, joy, and strength
+  Reference: Strength and motivation
+  F1: 0.667, ROUGE-L: 0.222, BERTScore: 0.915
+
+[Q18] Category 5: What are Melanie's plans for the summer with respect to adoption?
+
+[Planning] Analyzing information requirements for: What are Melanie's plans for the summer with respect to adoption?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and may not capture the specific summer year or adoption context. Two queries are sufficient: one to directly address Melanie's summer adoption plans, and another to gather contextual details about her adoption process that could clarify timing and intentions.
+[Planning] Generated 2 targeted queries
+[Search 1] What are Melanie's plans for the summer with respect to adoption?
+[Search 2] Melanie adoption process timeline summer plans
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 32 unique results (semantic + keyword + structured)
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7813.13it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 32 memory entries
+  Retrieval time: 5.744s
+  Answer time: 1.471s
+  Total time: 7.215s
+  Answer: Not mentioned in the conversation
+  Reference: Not mentioned in the conversation
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 1.000
+
+[Q19] Category 5: What does Melanie's necklace symbolize?
+
+[Planning] Analyzing information requirements for: What does Melanie's necklace symbolize?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original query is broad and may not identify the specific work or character. A second query adds 'symbolism' to focus on the symbolic meaning and narrative context, efficiently covering all high and medium priority information requirements.
+[Planning] Generated 2 targeted queries
+[Search 1] What does Melanie's necklace symbolize?
+[Search 2] Melanie necklace symbolism in [book/film]
+[Keyword Search] Found 5 results
+[Structured Search] Found 3 results
+[Planning] Found 38 unique results (semantic + keyword + structured)
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 6983.56it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 38 memory entries
+  Retrieval time: 4.090s
+  Answer time: 0.838s
+  Total time: 4.928s
+  Answer: Not mentioned in the conversation
+  Reference: Not mentioned in the conversation
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 1.000
+
+[Q20] Category 5: How did Caroline feel while watching the meteor shower?
+
+[Planning] Analyzing information requirements for: How did Caroline feel while watching the meteor shower?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question is already specific and directly targets both the emotional state and contextual details. A single query should suffice to retrieve the required information.
+[Planning] Generated 1 targeted queries
+[Search 1] How did Caroline feel while watching the meteor shower?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 35 unique results (semantic + keyword + structured)
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 14952.89it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 35 memory entries
+  Retrieval time: 3.597s
+  Answer time: 1.143s
+  Total time: 4.740s
+  Answer: Not mentioned in the conversation
+  Reference: Not mentioned in the conversation
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 1.000
+
+================================================================================
+                                  Test Summary                                  
+================================================================================
+
+Timing Statistics:
+  Average retrieval time: 6.937s
+  Average answer time: 1.124s
+  Average total time: 8.061s
+  Total retrieval time: 138.74s
+  Total answer time: 22.49s
+
+Answer Quality Metrics:
+
+Overall Performance:
+  f1                  : 0.6240 (±0.3206)
+  rougeL_f            : 0.6022 (±0.2914)
+  bert_f1             : 0.9392 (±0.0420)
+  sbert_similarity    : 0.7975 (±0.2104)
+
+Per-Category Performance:
+  Category 1: F1=0.3232 (n=6)
+  Category 2: F1=0.7270 (n=5)
+  Category 4: F1=0.6511 (n=6)
+  Category 5: F1=1.0000 (n=3)
+
+Results saved to /Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/recovered-20261113-060600-75832/baseline-5662/results.json
+
+================================================================================
+                                 Test Complete!                                 
+================================================================================
+

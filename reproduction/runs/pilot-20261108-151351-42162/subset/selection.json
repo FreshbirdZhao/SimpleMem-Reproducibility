@@ -1,0 +1,10 @@
+{
+  "source_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "sample_index": 0,
+  "question_indices": [
+    1,
+    91
+  ],
+  "selection_seed": 5660,
+  "conversation_preserved_in_full": true
+}

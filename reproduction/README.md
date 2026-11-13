@@ -48,6 +48,15 @@ The initial debug diary below is historical, not current setup status.
 Scope: the original text SimpleMem pipeline and its LoCoMo evaluator, not
 Omni-SimpleMem or EvolveMem. Starting commit: db80b6a7c591e0ea730a058e9f5fc4eb06572299.
 
+## Evidence in this repository
+
+`reproduction/runs/` is versioned: manifests, `results.json` predictions,
+console logs, subset selection, dependency freezes and the execution-source
+snapshot for the pilots, the original experiment, both recovery attempts and
+the six analysed runs. LanceDB `memory/` directories and derived
+`analysis/`/`submission/` copies inside run folders stay local; `.env` and the
+downloaded LoCoMo file are never committed.
+
 ## Research question
 
 On a fixed LoCoMo question subset, how does reducing semantic retrieval top-k

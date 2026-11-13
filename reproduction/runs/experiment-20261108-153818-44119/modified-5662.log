@@ -1,0 +1,1473 @@
+W1108 17:13:15.080000 47494 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 6341.48it/s]
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates
+Warning: Could not load SentenceTransformer model: Unrecognized processing class in sentence-transformers/all-MiniLM-L6-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes.
+Initializing SimpleMem system...
+============================================================
+Initializing SimpleMem System
+============================================================
+Using custom OpenAI base URL: https://api.deepseek.com/v1
+Loading embedding model: Qwen/Qwen3-Embedding-0.6B
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'Qwen/Qwen3-Embedding-0.6B'.
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_bert_config.json
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_bert_config.json
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_bert_config.json
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_bert_config.json
+Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_bert_config.json
+Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_bert_config.json
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_roberta_config.json
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_roberta_config.json
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_roberta_config.json
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_roberta_config.json
+Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_roberta_config.json
+Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_roberta_config.json
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_distilbert_config.json
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_distilbert_config.json
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_distilbert_config.json
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_distilbert_config.json
+Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_distilbert_config.json
+Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_distilbert_config.json
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_camembert_config.json
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_camembert_config.json
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_camembert_config.json
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_camembert_config.json
+Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_camembert_config.json
+Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_camembert_config.json
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_albert_config.json
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_albert_config.json
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_albert_config.json
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_albert_config.json
+Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_albert_config.json
+Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_albert_config.json
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlm-roberta_config.json
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlm-roberta_config.json
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlm-roberta_config.json
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlm-roberta_config.json
+Retrying in 8s [Retry 4/5].
+'timed out' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlm-roberta_config.json
+Retrying in 8s [Retry 5/5].
+'timed out' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlm-roberta_config.json
+'timed out' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlnet_config.json
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlnet_config.json
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlnet_config.json
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlnet_config.json
+Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlnet_config.json
+Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/./sentence_xlnet_config.json
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6233.03it/s]
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main/additional_chat_templates
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main
+Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main
+Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/tree/main
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/2_Normalize/config.json
+Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/2_Normalize/config.json
+Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/2_Normalize/config.json
+Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/2_Normalize/config.json
+Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/2_Normalize/config.json
+Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/2_Normalize/config.json
+/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/utils/embedding.py:82: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dimension = self.model.get_sentence_embedding_dimension()
+SentenceTransformer model loaded with dimension: 1024
+Opened existing table: memory_entries
+
+System initialization complete!
+============================================================
+
+================================================================================
+                         SimpleMem LoComo10 Dataset Test                        
+================================================================================
+
+Loading dataset from /Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/experiment-20261108-153818-44119/subset/subset.json...
+
+Sample 0:
+  Total QAs: 20
+  QAs with image evidence: 20
+
+Overall Statistics:
+Total QAs: 20
+Total QAs with image evidence: 20
+Average QAs per sample: 20.00
+Min QAs in a sample: 20
+Max QAs in a sample: 20
+
+================================================================================
+Testing Sample 0
+================================================================================
+Adding 419 dialogues to memory...
+Reusing prebuilt memory; conversation ingestion skipped
+Memory building time: 0.00s
+
+[Q1] Category 2: When did Melanie paint a sunrise?
+
+[Planning] Analyzing information requirements for: When did Melanie paint a sunrise?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question directly asks for the temporal information. A second query targeting the painting event helps confirm the agent and event details, ensuring comprehensive coverage with minimal redundancy.
+[Planning] Generated 2 targeted queries
+[Search 1] When did Melanie paint a sunrise?
+[Search 2] Melanie sunrise painting date
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 19 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - All required information types are addressed: Info 1 confirms Melanie painted a lake sunrise painting in 2022, satisfying the temporal requirement, agent identification, and event identification. The information is sufficient to answer when Melanie painted a sunrise.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7608.97it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 19 memory entries
+  Retrieval time: 6.724s
+  Answer time: 1.227s
+  Total time: 7.951s
+  Answer: In 2022
+  Reference: 2022
+  F1: 0.667, ROUGE-L: 0.667, BERTScore: 0.919
+
+[Q2] Category 2: When did Caroline meet up with her friends, family, and mentors?
+
+[Planning] Analyzing information requirements for: When did Caroline meet up with her friends, family, and mentors?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and may not surface the specific event. A targeted query combining Caroline with the key entities (friends, family, mentors) and 'meet up' should identify the event and its date. A second query adds 'date' or 'when' to explicitly retrieve temporal information. These two queries cover event identification and date/time, while the original query is included as a fallback.
+[Planning] Generated 2 targeted queries
+[Search 1] When did Caroline meet up with her friends, family, and mentors?
+[Search 2] Caroline friends family mentors meet up date
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 28 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 40% - The available information does not identify a single specific event where Caroline met up with friends, family, and mentors together. While there are mentions of meeting family the week before 2023-06-09, having a support system, and various separate events with friends or mentors, no source describes a combined meetup with all three groups. The date/time for such a combined meetup is therefore also missing, and the source context is only partially addressed through scattered references.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The original question asks for a single meetup with friends, family, and mentors. Available information describes separate interactions: a family meetup the week before 2023-06-09, a mentorship program the weekend before 2023-07-17, and a day out with friends on the weekend of 2023-09-09 to 2023-09-10. No source explicitly mentions a combined meetup with all three groups. Missing: identification of a specific event where Caroline met friends, family, and mentors together; the date/time of that event; and the source context (e.g., article, interview) that mentions it.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Caroline friends family mentors meetup event
+[Additional Search 2] Caroline reunion friends family mentors date
+[Additional Search 3] Caroline interview meetup friends family mentors
+[Intelligent Reflection Round 1] Total results: 37
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 40% - The question asks for a single meetup involving friends, family, and mentors together. The available information mentions separate interactions: meeting family the week before 2023-06-09, friends on the weekend of 2023-09-09 to 2023-09-10, and mentors in the context of adoption advice or mentorship programs. No source describes a specific event where Caroline met up with friends, family, and mentors simultaneously, so the event identification and date/time for such a combined meetup are missing.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The original question asks when Caroline met up with her friends, family, and mentors. Available information indicates separate meetups: with family the week before 2023-06-09, with friends on the weekend of 2023-09-09 to 2023-09-10, and with mentors possibly through a mentorship program or adoption advice contact. However, there is no single event where all three groups (friends, family, and mentors) met together, and the exact dates for some meetups (e.g., with mentors) are not specified. Missing information includes: the specific event or occasion where Caroline met with all three groups together, the exact date/time of that combined meetup, and the source context that mentions it.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Caroline meet up friends family mentors date
+[Additional Search 2] Caroline friends family mentors gathering event
+[Additional Search 3] Caroline mentor meeting date adoption advice
+[Intelligent Reflection Round 2] Total results: 46
+Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7645.98it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 46 memory entries
+  Retrieval time: 12.646s
+  Answer time: 1.187s
+  Total time: 13.833s
+  Answer: The week before 09 June 2023 (family); no specific date for friends and mentors
+  Reference: The week before 9 June 2023
+  F1: 0.500, ROUGE-L: 0.500, BERTScore: 0.917
+
+[Q3] Category 1: What books has Melanie read?
+
+[Planning] Analyzing information requirements for: What books has Melanie read?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and may refer to any Melanie. To disambiguate, we first search for the original query to see if a specific Melanie is implied. Then, to cover the possibility of a well-known Melanie (e.g., Melanie Martinez), we add a targeted query that includes a likely full name and reading history. This minimal set addresses person identification and reading history while keeping queries focused.
+[Planning] Generated 2 targeted queries
+[Search 1] What books has Melanie read?
+[Search 2] Melanie Martinez books read list
+[Keyword Search] Found 1 results
+[Structured Search] Found 5 results
+[Planning] Found 18 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 60% - The information identifies Melanie and provides some reading history (Charlotte's Web, an unnamed book read in 2022, and a book Caroline recommended), but it does not provide a complete list of books Melanie has read. The source of information is implied through conversations with Caroline, but the reading history is partial and lacks specific titles for some books.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The current information identifies Melanie as a person who has conversations with Caroline, but her full name and context are not provided. We know some books Melanie has read: Charlotte's Web (childhood favorite), an unnamed book read in 2022, and a book Caroline recommended (title unknown). A complete list of books Melanie has read is missing, as is the source of this reading history. Targeted searches are needed to identify Melanie fully, find a comprehensive reading list, and locate the source of such information.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Melanie Caroline book club reading list
+[Additional Search 2] Melanie "Charlotte's Web" "Becoming Nicole" books read
+[Additional Search 3] Melanie reading list 2022 2023 book recommendations
+[Intelligent Reflection Round 1] Total results: 23
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 50% - The person 'Melanie' is identified in context through conversations with Caroline, and some reading history is provided (Charlotte's Web, a book read in 2022, a book recommended by Caroline). However, the reading history is not a comprehensive list, and the specific titles of the 2022 book and the recommended book are not given. The source of information is implied as personal conversation, but no explicit source or record is provided. Thus, the information is insufficient to completely answer what books Melanie has read.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The specific person named Melanie is not fully identified (only first name and context of conversations with Caroline). The reading history is incomplete: we know Melanie read Charlotte's Web as a child, read a book in 2022 (title not given), and is currently reading a book Caroline recommended (title not given). The source of this information is the conversation logs, but no external source is provided. Missing: full name/identity of Melanie, titles of the 2022 book and the recommended book, and any other books she has read.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Melanie Caroline conversation book read 2022 title
+[Additional Search 2] Melanie reading book Caroline recommended title
+[Additional Search 3] Melanie full name identity context Caroline
+[Intelligent Reflection Round 2] Total results: 32
+Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8068.52it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 32 memory entries
+  Retrieval time: 11.925s
+  Answer time: 1.137s
+  Total time: 13.062s
+  Answer: Charlotte's Web (as a child) and an unnamed book in 2022
+  Reference: "Nothing is Impossible", "Charlotte's Web"
+  F1: 0.000, ROUGE-L: 0.333, BERTScore: 0.889
+
+[Q4] Category 1: What does Melanie do to destress?
+
+[Planning] Analyzing information requirements for: What does Melanie do to destress?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is broad and may not specify which Melanie is meant. A targeted query combining 'Melanie' with 'destress' and 'relax' will retrieve both identity and behavior information. Adding a query with 'interview' or 'biography' helps capture context and source details. Two queries are sufficient to cover the high-priority identity/behavior and medium-priority context requirements.
+[Planning] Generated 3 targeted queries
+[Search 1] What does Melanie do to destress?
+[Search 2] Melanie destress relax activities
+[Search 3] Melanie interview biography destress habits
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 26 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The information identifies Melanie as a person with family and work responsibilities (Info 23) and provides multiple specific destressing behaviors: running (Info 1, 2, 7, 11, 12), reading (Info 1, 4), playing violin (Info 1), painting (Info 3, 4), pottery (Info 5), nature/camping (Info 8), and swimming with kids (Info 10). The context is a conversation with Caroline (Info 2, 3, 4, etc.), satisfying the medium-priority context requirement. All required information types are addressed with sufficient detail for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 26 memory entries
+  Retrieval time: 6.498s
+  Answer time: 0.886s
+  Total time: 7.384s
+  Answer: Running, painting, and spending time in nature/camping
+  Reference: Running, pottery
+  F1: 0.222, ROUGE-L: 0.200, BERTScore: 0.000
+
+[Q5] Category 2: When did Caroline go to the adoption meeting?
+
+[Planning] Analyzing information requirements for: When did Caroline go to the adoption meeting?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question directly asks for the temporal information about Caroline's attendance at the adoption meeting. Since only one minimal query is needed and it should cover both event identification and temporal details, using the original query is sufficient.
+[Planning] Generated 1 targeted queries
+[Search 1] When did Caroline go to the adoption meeting?
+[Keyword Search] Found 5 results
+[Structured Search] Found 0 results
+[Planning] Found 13 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 0% - The provided information does not specify the date or time when Caroline attended an adoption meeting. While there are references to adoption-related activities (e.g., passing interviews, applying to agencies, attending an advice group), no explicit adoption meeting event involving Caroline is identified, and no temporal information about such a meeting is given.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information does not specify when Caroline attended an adoption meeting. While there are references to adoption agency interviews, applying to agencies, and an adoption advice group, the exact date/time of an 'adoption meeting' involving Caroline is missing. The queries should target any mention of Caroline attending or participating in an adoption meeting, including possible synonyms like 'adoption orientation', 'adoption workshop', or 'adoption group meeting'.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Caroline adoption meeting date
+[Additional Search 2] Caroline attended adoption meeting time
+[Additional Search 3] Caroline adoption agency meeting or orientation
+[Intelligent Reflection Round 1] Total results: 17
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 0% - The available information mentions a council meeting for adoption on 2023-07-14, but it does not confirm that this is the 'adoption meeting' referenced in the question. No other adoption meeting event is identified, and no date or time for Caroline attending an adoption meeting is provided. Thus, both required information types (temporal and event identification) are not adequately addressed.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information mentions Caroline attending a council meeting for adoption on 2023-07-14, but it is unclear if this is the 'adoption meeting' referenced in the question. The exact date or time when Caroline attended the adoption meeting is not explicitly stated, and the specific event (adoption meeting) is not clearly identified. We need to find information that directly states when Caroline went to an adoption meeting or clarifies which event is considered the adoption meeting.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Caroline adoption meeting date
+[Additional Search 2] Caroline attended adoption meeting time
+[Additional Search 3] Caroline council meeting adoption July 14 2023
+[Intelligent Reflection Round 2] Total results: 22
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 22 memory entries
+  Retrieval time: 11.298s
+  Answer time: 1.144s
+  Total time: 12.442s
+  Answer: 14 July 2023
+  Reference: The friday before 15 July 2023
+  F1: 0.444, ROUGE-L: 0.444, BERTScore: 0.000
+
+[Q6] Category 1: What types of pottery have Melanie and her kids made?
+
+[Planning] Analyzing information requirements for: What types of pottery have Melanie and her kids made?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question is already specific and directly targets the required information: the types of pottery made by Melanie and her kids. A single query using the original question should retrieve the necessary list and association. No additional queries are needed.
+[Planning] Generated 1 targeted queries
+[Search 1] What types of pottery have Melanie and her kids made?
+[Keyword Search] Found 4 results
+[Structured Search] Found 5 results
+[Planning] Found 19 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 50% - The available information identifies some pottery types made by Melanie and her kids (a cup with a dog face made by the kids, and pots made by Melanie and her kids), but it does not provide a comprehensive list of all pottery types they have made. Additionally, some pottery items (bowls, starfish, flower plate) are attributed only to Melanie, not to her kids, and the association of pottery types with both Melanie and her kids is only partially confirmed. Thus, the required information types are not fully addressed.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information lists pottery items made by Melanie (bowls, starfish, flower plate, bowl with black and white flower design) and by Melanie's kids (cup with a dog face, pots). However, the original question asks for 'types of pottery' that Melanie and her kids have made. The current info provides specific items but not necessarily categorized types (e.g., wheel-thrown, hand-built, sculptural, functional). Additionally, it is unclear whether the 'pots' made by Melanie and her kids are distinct from the bowls and other items, and whether there are other pottery types not mentioned. Missing is a comprehensive list of pottery types (e.g., bowls, plates, cups, sculptures) and clear association of each type with Melanie and/or her kids.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Melanie kids pottery workshop types of pottery made
+[Additional Search 2] Melanie pottery creations bowls plates cups starfish flower plate
+[Additional Search 3] Melanie and kids pottery items list
+[Intelligent Reflection Round 1] Total results: 23
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 70% - The available information identifies some pottery types made by Melanie and her kids (a cup with a dog face, pots, bowls, a starfish, and a flower plate), but it does not clearly distinguish which specific types were made by Melanie versus her kids. The association requirement is only partially met because the cup with a dog face is attributed to the kids, while other items are attributed to Melanie alone or ambiguously to both. A comprehensive answer listing pottery types for Melanie and her kids separately cannot be fully determined.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information lists pottery items made by Melanie (bowl, flower plate, bowls with starfish) and by Melanie's kids (cup with dog face), and mentions that Melanie and her kids all made their own pots. However, it is not explicitly stated what types of pottery the kids made besides the cup, and whether the pots made by Melanie and her kids are considered a type of pottery. The missing information is a clear list of pottery types made by Melanie and her kids, and confirmation of which types were made by whom.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Melanie kids pottery workshop cup dog face pots types
+[Additional Search 2] Melanie pottery creations bowl flower plate starfish kids pottery
+[Additional Search 3] Melanie and kids made pots pottery types list
+[Intelligent Reflection Round 2] Total results: 24
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 24 memory entries
+  Retrieval time: 11.836s
+  Answer time: 1.027s
+  Total time: 12.863s
+  Answer: Pots and a cup with a dog face
+  Reference: bowls, cup
+  F1: 0.222, ROUGE-L: 0.200, BERTScore: 0.000
+
+[Q7] Category 1: What are Melanie's pets' names?
+
+[Planning] Analyzing information requirements for: What are Melanie's pets' names?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question directly asks for Melanie's pets' names, covering the naming requirement. A second query targeting 'Melanie pets names' helps identify the specific Melanie and retrieve ownership and naming details efficiently.
+[Planning] Generated 2 targeted queries
+[Search 1] What are Melanie's pets' names?
+[Search 2] Melanie pets names
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 21 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The available information identifies Melanie as the person referenced, lists her pets (dog, cat, and another cat), and provides their names: Luna, Oliver, and Bailey. All required information types are addressed with sufficient detail to answer the question.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 21 memory entries
+  Retrieval time: 30.433s
+  Answer time: 1.311s
+  Total time: 31.744s
+  Answer: Luna, Oliver, and Bailey
+  Reference: Oliver, Luna, Bailey
+  F1: 0.857, ROUGE-L: 0.571, BERTScore: 0.000
+
+[Q8] Category 2: When did Caroline draw a self-portrait?
+
+[Planning] Analyzing information requirements for: When did Caroline draw a self-portrait?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original query is broad and may not identify the specific Caroline or provide temporal context. We add a query targeting the entity identification and contextual clues to disambiguate and pinpoint the time period.
+[Planning] Generated 2 targeted queries
+[Search 1] When did Caroline draw a self-portrait?
+[Search 2] Caroline self-portrait drawing date context
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 22 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required temporal information is provided in Info 2, which states the self-portrait was made 'the previous week' relative to 2023-08-23, giving an approximate date. The entity is identified as Caroline and the specific self-portrait is described as a painting of a woman with a blue face. Contextual clues include Caroline's feelings of liberation and empowerment while painting, and her broader art journey related to identity and transition. All required information types are addressed with sufficient detail to answer when Caroline drew the self-portrait.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 22 memory entries
+  Retrieval time: 6.115s
+  Answer time: 1.123s
+  Total time: 7.238s
+  Answer: The previous week before 23 August 2023 (around 16 August 2023)
+  Reference: The week before 23 August 2023
+  F1: 0.750, ROUGE-L: 0.706, BERTScore: 0.000
+
+[Q9] Category 1: What are some changes Caroline has faced during her transition journey?
+
+[Planning] Analyzing information requirements for: What are some changes Caroline has faced during her transition journey?
+[Planning] Identified 4 information requirements
+[Planning] Strategy: The original question is broad and may not clearly identify Caroline or the context. A second targeted query adds specificity by focusing on 'Caroline transition changes' to retrieve concrete changes and identity context. Two queries are minimal to cover high-priority information needs.
+[Planning] Generated 2 targeted queries
+[Search 1] What are some changes Caroline has faced during her transition journey?
+[Search 2] Caroline transition journey changes
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 21 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 95% - The provided information addresses all required information types. Caroline's identity and context are established as a transgender woman who transitioned about three years prior to June 2023. Specific changes are detailed across social/relationship changes, emotional/psychological changes, physical changes via art exploring her changing body, and community involvement. A timeline is provided through dated conversations and the mention of transitioning three years before June 2023. The source is identified as conversations between Caroline and Melanie. The information is sufficient to provide a comprehensive answer, with only minor gaps such as exact dates for some changes, which are not critical.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 21 memory entries
+  Retrieval time: 8.138s
+  Answer time: 1.207s
+  Total time: 9.345s
+  Answer: Changed relationships (some friends supportive, a few unable to handle it), a changing body, and learning to be herself without fear.
+  Reference: Changes to her body, losing unsupportive friends
+  F1: 0.231, ROUGE-L: 0.214, BERTScore: 0.000
+
+[Q10] Category 2: When did Melanie's family go on a roadtrip?
+
+[Planning] Analyzing information requirements for: When did Melanie's family go on a roadtrip?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question is already specific and directly targets both the event identification and temporal information. A single query is sufficient to retrieve the required information.
+[Planning] Generated 1 targeted queries
+[Search 1] When did Melanie's family go on a roadtrip?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 20 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required information types are event identification and temporal information. Info 2 explicitly identifies a family roadtrip and provides a temporal reference: the weekend before 2023-10-20. Info 3 further supports this by mentioning a trail walk on 2023-10-19 as relaxation after the road trip. Thus, both required types are addressed with sufficient specificity to answer when the roadtrip occurred.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 20 memory entries
+  Retrieval time: 5.894s
+  Answer time: 0.958s
+  Total time: 6.852s
+  Answer: The weekend before 20 October 2023
+  Reference: The weekend before 20 October 2023
+  F1: 1.000, ROUGE-L: 1.000, BERTScore: 0.000
+
+[Q11] Category 1: What items has Melanie bought?
+
+[Planning] Analyzing information requirements for: What items has Melanie bought?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question is already specific and directly targets the core information requirement (items Melanie bought). Since the analysis indicates only 1 minimal query is needed, we use the original query as the single targeted search. Identity confirmation is secondary and can be resolved from the same results if context is present.
+[Planning] Generated 1 targeted queries
+[Search 1] What items has Melanie bought?
+[Keyword Search] Found 0 results
+[Structured Search] Found 5 results
+[Planning] Found 14 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 20% - The available information only mentions that Melanie got new shoes, but does not provide a comprehensive list of items Melanie has bought. Additionally, there is no explicit identity confirmation (full name or context) to ensure the correct Melanie is referenced, though the context suggests a specific Melanie. The purchase records information type is only partially addressed with a single item, and identity confirmation is not explicitly addressed.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information only mentions that Melanie got new shoes, but does not provide a comprehensive list of items Melanie has bought. Additionally, it is unclear which Melanie is being referred to, as only her first name is known. Missing information includes purchase records (item names, quantities, dates) and identity confirmation (full name or context) to ensure correct records are retrieved.
+[Intelligent Reflection Round 1] Generated 3 targeted queries
+[Additional Search 1] Melanie purchase history items bought
+[Additional Search 2] Melanie full name identity purchase records
+[Additional Search 3] Melanie shopping receipts or transaction list
+[Intelligent Reflection Round 1] Total results: 30
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 30% - The available information only mentions one purchased item (wooden figurines bought on 2023-10-21) and a pair of new shoes, but does not provide a comprehensive list of items Melanie has bought. The identity confirmation is partially addressed by context (Melanie interacting with Caroline), but the purchase records are far from complete.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+[Intelligent Reflection] Missing info: The available information only mentions one purchase: wooden figurines bought on 2023-10-21. A comprehensive list of items Melanie has bought is missing. Additionally, it is unclear which Melanie is being referred to, as only her first name is known. Targeted queries should aim to retrieve purchase records and confirm Melanie's identity.
+[Intelligent Reflection Round 2] Generated 3 targeted queries
+[Additional Search 1] Melanie purchase history items bought
+[Additional Search 2] Melanie full name identity context
+[Additional Search 3] Melanie shopping receipts or transaction records
+[Intelligent Reflection Round 2] Total results: 33
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 33 memory entries
+  Retrieval time: 16.992s
+  Answer time: 0.890s
+  Total time: 17.882s
+  Answer: New shoes and wooden figurines
+  Reference: Figurines, shoes
+  F1: 0.571, ROUGE-L: 0.286, BERTScore: 0.000
+
+[Q12] Category 4: What does Caroline's necklace symbolize?
+
+[Planning] Analyzing information requirements for: What does Caroline's necklace symbolize?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is ambiguous because 'Caroline' could refer to multiple contexts. The first query uses the original phrasing to capture any direct answers. The second query adds 'symbolism' and 'meaning' to target the symbolic significance and narrative role, while remaining broad enough to cover different contexts.
+[Planning] Generated 2 targeted queries
+[Search 1] What does Caroline's necklace symbolize?
+[Search 2] Caroline necklace symbolism meaning
+[Keyword Search] Found 5 results
+[Structured Search] Found 4 results
+[Planning] Found 16 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 95% - The available information identifies the context (Caroline's personal conversation with Melanie, necklace as a gift from her grandmother in Sweden) and explicitly states the symbolic meaning (love, faith, strength, roots, family support). The narrative role is partially addressed through its function as a reminder of roots and family support, though not deeply elaborated. All required information types are covered sufficiently for a comprehensive answer.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 16 memory entries
+  Retrieval time: 16004.956s
+  Answer time: 1.167s
+  Total time: 16006.123s
+  Answer: Love, faith, and strength; a reminder of her roots and family support
+  Reference: love, faith, and strength
+  F1: 0.400, ROUGE-L: 0.500, BERTScore: 0.000
+
+[Q13] Category 4: What motivated Caroline to pursue counseling?
+
+[Planning] Analyzing information requirements for: What motivated Caroline to pursue counseling?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question directly targets Caroline's motivation for pursuing counseling, covering both personal background and motivational factors. A second query adds focus on pivotal moments and decision context to capture the career decision process, ensuring all high and medium priority information requirements are addressed with minimal overlap.
+[Planning] Generated 2 targeted queries
+[Search 1] What motivated Caroline to pursue counseling?
+[Search 2] Caroline counseling career decision pivotal moments personal experiences
+[Keyword Search] Found 1 results
+[Structured Search] Found 5 results
+[Planning] Found 18 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The available information thoroughly addresses all required information types. Caroline's personal background is covered by her struggles with mental health and positive experiences with support groups (Info 10, 11, 12, 16, 18). Motivational factors are clearly stated: desire to help others with similar issues, passion for making a positive impact, and wanting to provide support systems (Info 2, 3, 5, 6, 9, 10, 11, 12). Career decision context is provided through her ongoing exploration of counseling, pivotal moments like the parade and support group, and the realization from her own recovery (Info 2, 3, 5, 6, 9, 10, 11, 12). No critical gaps remain.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7638.72it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 18 memory entries
+  Retrieval time: 23791.168s
+  Answer time: 1.290s
+  Total time: 23792.459s
+  Answer: Her own mental health journey and the support she received, which inspired her to help others with similar issues.
+  Reference: her own journey and the support she received, and how counseling improved her life
+  F1: 0.533, ROUGE-L: 0.545, BERTScore: 0.918
+
+[Q14] Category 4: What do sunflowers represent according to Caroline?
+
+[Planning] Analyzing information requirements for: What do sunflowers represent according to Caroline?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information requirements: Connection error.
+[Planning] Identified 1 information requirements
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate targeted queries: Connection error.
+[Planning] Generated 1 targeted queries
+[Search 1] What do sunflowers represent according to Caroline?
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Query analysis failed after 3 attempts: Connection error.
+[Keyword Search] Found 5 results
+[Structured Search] Found 0 results
+[Planning] Found 15 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information completeness: Connection error.
+[Intelligent Reflection Round 1] Information is incomplete, generating targeted additional queries...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate missing info queries: Connection error.
+[Intelligent Reflection Round 1] Generated 0 targeted queries
+[Intelligent Reflection Round 1] Total results: 15
+
+[Intelligent Reflection Round 2] Analyzing information completeness...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to analyze information completeness: Connection error.
+[Intelligent Reflection Round 2] Information is incomplete, generating targeted additional queries...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Failed to generate missing info queries: Connection error.
+[Intelligent Reflection Round 2] Generated 0 targeted queries
+[Intelligent Reflection Round 2] Total results: 15
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Answer generation attempt 1/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Answer generation attempt 2/3 failed: Connection error.. Retrying...
+LLM API call failed (attempt 1/3): Connection error.
+Retrying in 1 seconds...
+LLM API call failed (attempt 2/3): Connection error.
+Retrying in 2 seconds...
+LLM API call failed after 3 attempts: Connection error.
+Warning: Failed to parse JSON response after 3 attempts: Connection error.
+Could not reach the Hub ([Errno 8] nodename nor servname provided, or not known). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 8] nodename nor servname provided, or not known). Using cached commit hash for 'roberta-large'.
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 8] nodename nor servname provided, or not known' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 8] nodename nor servname provided, or not known' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 8] nodename nor servname provided, or not known' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 8] nodename nor servname provided, or not known' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 61] Connection refused' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 61] Connection refused). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 6361.85it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 15 memory entries
+  Retrieval time: 642.782s
+  Answer time: 780.637s
+  Total time: 1423.419s
+  Answer: Failed to generate answer
+  Reference: warmth and happiness
+  F1: 0.000, ROUGE-L: 0.000, BERTScore: 0.854
+
+[Q15] Category 4: How long has Melanie been creating art?
+
+[Planning] Analyzing information requirements for: How long has Melanie been creating art?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question directly asks for the duration of Melanie's art creation, which requires both the start date and the current date. One query targets the start date specifically, while the original query can retrieve the duration or enough context to calculate it. The current date is assumed to be known (today's date), so no separate query is needed.
+[Planning] Generated 2 targeted queries
+[Search 1] When did Melanie start creating art?
+[Search 2] How long has Melanie been creating art?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 21 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required information types are addressed: the start date is inferable from Info 1 (seven years as of 2023-09-13), the current date is provided by the timestamp in Info 1, and the duration is explicitly stated as seven years. Thus, the question can be answered as approximately seven years as of September 2023.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 54] Connection reset by peer). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 54] Connection reset by peer). Using cached commit hash for 'roberta-large'.
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Could not reach the Hub ([Errno 54] Connection reset by peer). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 54] Connection reset by peer). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 7858.28it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 21 memory entries
+  Retrieval time: 13.494s
+  Answer time: 1.097s
+  Total time: 14.591s
+  Answer: Seven years
+  Reference: 7 years
+  F1: 0.500, ROUGE-L: 0.500, BERTScore: 0.985
+
+[Q16] Category 4: What was the poetry reading that Caroline attended about?
+
+[Planning] Analyzing information requirements for: What was the poetry reading that Caroline attended about?
+[Planning] Identified 2 information requirements
+[Planning] Strategy: The original question already captures both key entities and the relationship, so it serves as the primary query. A second query is added to explicitly target the topic/theme of the poetry reading, increasing the chance of retrieving that specific information.
+[Planning] Generated 2 targeted queries
+[Search 1] What was the poetry reading that Caroline attended about?
+[Search 2] Caroline poetry reading topic theme
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 23 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The required information types are fully addressed. Info 5 explicitly identifies the poetry reading as a transgender poetry reading where transgender people shared their stories through poetry, and describes it as a safe place for self-expression and empowering celebration of identities. Info 2 adds details about the atmosphere and impact. Together, these provide a comprehensive answer to what the poetry reading was about.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 54] Connection reset by peer). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 54] Connection reset by peer). Using cached commit hash for 'roberta-large'.
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8331.04it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  Retrieved: 23 memory entries
+  Retrieval time: 6.553s
+  Answer time: 1.574s
+  Total time: 8.127s
+  Answer: A transgender poetry reading where transgender people shared their stories through poetry
+  Reference: It was a transgender poetry reading where transgender people shared their stories.
+  F1: 0.857, ROUGE-L: 0.833, BERTScore: 0.973
+
+[Q17] Category 4: What do Melanie's family give her?
+
+[Planning] Analyzing information requirements for: What do Melanie's family give her?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is kept as the primary query to directly retrieve the answer. A second query adds context by specifying 'story' to help identify who Melanie is and the source, addressing the high-priority identification requirement without redundancy.
+[Planning] Generated 2 targeted queries
+[Search 1] What do Melanie's family give her?
+[Search 2] Melanie family give her story
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 22 unique results (semantic + keyword + structured)
+
+[Intelligent Reflection Round 1] Analyzing information completeness...
+[Intelligent Reflection] Coverage: 100% - The information identifies Melanie as a person with a family (Info 1-3, 5-6, 11-13) and provides multiple statements about what her family gives her: support, motivation, joy, love, help during her move, and strength during tough times. The context is conversations with Caroline, with timestamps. All required information types are addressed, and the answer can be comprehensively derived from the provided details.
+[Intelligent Reflection Round 1] Information is complete
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Error calculating BERTScore: [Errno 60] Operation timed out
+  Retrieved: 22 memory entries
+  Retrieval time: 7.004s
+  Answer time: 1.606s
+  Total time: 8.610s
+  Answer: Support, love, motivation, and joy (no specific gift mentioned)
+  Reference: Strength and motivation
+  F1: 0.333, ROUGE-L: 0.167, BERTScore: 0.000
+
+[Q18] Category 5: What are Melanie's plans for the summer with respect to adoption?
+
+[Planning] Analyzing information requirements for: What are Melanie's plans for the summer with respect to adoption?
+[Planning] Identified 3 information requirements
+[Planning] Strategy: The original question is already specific and covers all key entities (Melanie, summer, adoption). A single query using the original wording should retrieve the required personal plan, temporal context, and adoption details without redundancy.
+[Planning] Generated 1 targeted queries
+[Search 1] What are Melanie's plans for the summer with respect to adoption?
+[Keyword Search] Found 5 results
+[Structured Search] Found 5 results
+[Planning] Found 19 unique results (semantic + keyword + structured)
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main/additional_chat_templates
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 2s [Retry 2/5].
+WARNING:huggingface_hub.utils._http:Retrying in 2s [Retry 2/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 4s [Retry 3/5].
+WARNING:huggingface_hub.utils._http:Retrying in 4s [Retry 3/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 4/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 4/5].
+'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 54] Connection reset by peer' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Retrying in 8s [Retry 5/5].
+WARNING:huggingface_hub.utils._http:Retrying in 8s [Retry 5/5].
+'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+WARNING:huggingface_hub.utils._http:'[Errno 60] Operation timed out' thrown while requesting GET https://huggingface.co/api/models/roberta-large/tree/main
+Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub ([Errno 60] Operation timed out). Using cached commit hash for 'roberta-large'.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 6682.93it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.

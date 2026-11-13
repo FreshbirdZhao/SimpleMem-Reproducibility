@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-08",
+  "provider": "DeepSeek",
+  "base_url": "https://api.deepseek.com/v1",
+  "requested_model": "deepseek-chat",
+  "preflight_returned_model": "deepseek-flash",
+  "provider_usage_measured": false,
+  "dataset_commit": "3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376",
+  "source_sha256": {
+    "reproduction/run.py": "7ed9b5c5545c072e7df9877089596684c2cef968ba9bb6f3ca6e5d7340fa177d",
+    "reproduction/start_experiment.sh": "fbc42a65972d5220bc6221c419834d27f5df71d4d9a9f01b1a04e7881215eb09",
+    "reproduction/requirements.txt": "0a3ded667cbd0ec3eabef61038afdc7b507babe52407e7867433e07c4af21923",
+    "test_locomo10.py": "fe856204206aba8898914c38d1ff695635492df8ae2415f179f9e4a25de249cf"
+  },
+  "protocol_file": "reproduction/PROTOCOL.md",
+  "keyword_index_limitation": "Upstream Tantivy index only covers initial insertion batch; identical behavior retained in both conditions."
+}

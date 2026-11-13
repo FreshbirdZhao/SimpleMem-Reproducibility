@@ -69,7 +69,6 @@ env/
 lancedb_data/
 omni_memory_data/
 evolution_results/
-reproduction/runs/
 reproduction/local-subset/
 
 # Log files
@@ -93,3 +92,10 @@ docs/other
 # Reproduction deliverables: keep analysis tables, exclude local drafts and run artifacts
 !reproduction/analysis/*.json
 reproduction/*-draft/
+
+# Experiment evidence is published; vector databases and derived copies stay local
+reproduction/runs/**/memory
+reproduction/runs/**/analysis
+reproduction/runs/**/submission
+!reproduction/runs/**/*.json
+!reproduction/runs/**/*.log

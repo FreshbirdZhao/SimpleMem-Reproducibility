@@ -1,0 +1,11 @@
+{
+  "source": "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/experiment-20261108-153818-44119",
+  "utc_started": "20261113-060300",
+  "retained_seeds": [
+    5660,
+    5661
+  ],
+  "rerun_seed": 5662,
+  "reason": "Original third pair contains API failures and missing modified results",
+  "limitation": "Third pair rerun on a later date; provider alias, load and caching may drift"
+}

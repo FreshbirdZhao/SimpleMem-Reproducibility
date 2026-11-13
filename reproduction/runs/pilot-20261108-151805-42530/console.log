@@ -1,0 +1,141 @@
+W1108 15:18:10.857000 42556 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+[nltk_data] Error loading punkt: Security Violation [pathsec.urlopen]:
+[nltk_data]     SSRF attempt to restricted IP 198.18.0.17
+[nltk_data] Error loading wordnet: Security Violation
+[nltk_data]     [pathsec.urlopen]: SSRF attempt to restricted IP
+[nltk_data]     198.18.0.17
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4006.54it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Initializing SimpleMem system...
+============================================================
+Initializing SimpleMem System
+============================================================
+Using custom OpenAI base URL: https://api.deepseek.com/v1
+Loading embedding model: Qwen/Qwen3-Embedding-0.6B
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11147.89it/s]
+/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/utils/embedding.py:82: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dimension = self.model.get_sentence_embedding_dimension()
+SentenceTransformer model loaded with dimension: 1024
+Created new table: memory_entries
+
+Clearing existing database...
+Created new table: memory_entries
+Database cleared
+
+System initialization complete!
+============================================================
+
+================================================================================
+                         SimpleMem LoComo10 Dataset Test                        
+================================================================================
+
+Loading dataset from /Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/runs/pilot-20261108-151805-42530/subset/subset.json...
+
+Sample 0:
+  Total QAs: 2
+  QAs with image evidence: 2
+
+Overall Statistics:
+Total QAs: 2
+Total QAs with image evidence: 2
+Average QAs per sample: 2.00
+Min QAs in a sample: 2
+Max QAs in a sample: 2
+Created new table: memory_entries
+Database cleared
+
+================================================================================
+Testing Sample 0
+================================================================================
+Adding 419 dialogues to memory...
+
+Processing window: 40 dialogues (processed 0 so far)
+FTS index creation skipped: Tantivy-based FTS has been removed. Remove use_tantivy and recreate the index with native FTS.
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 40 so far)
+FTS index creation skipped: Tantivy-based FTS has been removed. Remove use_tantivy and recreate the index with native FTS.
+Added 27 memory entries
+Generated 27 memory entries
+
+Processing window: 40 dialogues (processed 80 so far)
+FTS index creation skipped: Tantivy-based FTS has been removed. Remove use_tantivy and recreate the index with native FTS.
+Added 55 memory entries
+Generated 55 memory entries
+
+Processing window: 40 dialogues (processed 120 so far)
+FTS index creation skipped: Tantivy-based FTS has been removed. Remove use_tantivy and recreate the index with native FTS.
+Added 43 memory entries
+Generated 43 memory entries
+
+Processing window: 40 dialogues (processed 160 so far)
+FTS index creation skipped: Tantivy-based FTS has been removed. Remove use_tantivy and recreate the index with native FTS.
+Added 37 memory entries
+Generated 37 memory entries
+
+Processing window: 40 dialogues (processed 200 so far)
+FTS index creation skipped: Tantivy-based FTS has been removed. Remove use_tantivy and recreate the index with native FTS.
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 240 so far)
+FTS index creation skipped: Tantivy-based FTS has been removed. Remove use_tantivy and recreate the index with native FTS.
+Added 40 memory entries
+Generated 40 memory entries
+
+Processing window: 40 dialogues (processed 280 so far)
+Traceback (most recent call last):
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/run.py", line 130, in <module>
+    main()
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/run.py", line 126, in main
+    args.handler(args)
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/reproduction/run.py", line 100, in execute
+    runpy.run_path(str(ROOT / "test_locomo10.py"), run_name="__main__")
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/test_locomo10.py", line 1074, in <module>
+    main()
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/test_locomo10.py", line 1065, in main
+    results = tester.run_test(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/test_locomo10.py", line 963, in run_test
+    sample_results = self.test_sample(sample, sample_idx, enable_parallel_questions=enable_parallel_questions)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/test_locomo10.py", line 774, in test_sample
+    self.system.add_dialogues(dialogues)
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/main.py", line 136, in add_dialogues
+    self.memory_builder.add_dialogues(dialogues)
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/memory_builder.py", line 83, in add_dialogues
+    self.process_window()
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/memory_builder.py", line 151, in process_window
+    self.vector_store.add_entries(entries)
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/database/vector_store.py", line 61, in add_entries
+    vectors = self.embedding_model.encode_documents(restatements)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/utils/embedding.py", line 134, in encode_documents
+    return self.encode(documents, is_query=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/utils/embedding.py", line 112, in encode
+    return self._encode_standard(texts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/simplemem/core/utils/embedding.py", line 152, in _encode_standard
+    embeddings = self.model.encode(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 158, in inference_mode
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/sentence_transformers/util/decorators.py", line 46, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/sentence_transformers/sentence_transformer/model.py", line 895, in encode
+    all_embeddings = self._inference(inputs, device=device, **inference_kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 158, in inference_mode
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/polyphia/Desktop/download/5660/code for 5660/Individual Project/SimpleMem/.venv/lib/python3.11/site-packages/sentence_transformers/sentence_transformer/model.py", line 994, in _inference
+    embeddings = embeddings.cpu()
+                 ^^^^^^^^^^^^^^^^
+KeyboardInterrupt
