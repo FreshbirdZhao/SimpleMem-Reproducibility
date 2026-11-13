@@ -336,15 +336,15 @@ def main():
         ("What we reproduced", f"Full first LoCoMo conversation: 419 turns. Fixed 20 questions. {trial_count} analyzed seeds. Hosted DeepSeek plus local Qwen embeddings.", "1:00-2:20", "Explain memory construction, planned semantic searches, keyword and structured retrieval, reflection, and answering. State the target F1 behavior and why the subset is feasible."),
         ("One controlled modification", "Semantic top-k 25 to 10. Identical copied memory within each seed. Same prompts, model, evaluator, keyword k=5, structured k=5.", "2:20-3:40", "Show the runner flags and checksum guards. Explain why rebuilding memory separately would confound the comparison. Top-k is per semantic search, not a cap on merged results."),
         ("Measurement design", f"{trial_count * 40} validated predictions in {trial_count * 2} runs. Per-seed means, sample variance across {trial_count} seeds, and paired differences. No provider seed or measured token costs.", "3:40-5:00", "Describe the fixed selection, category counts, pilot overlap, sequential runs, and fixed baseline-first order. Explain unique-token F1 and additional non-adversarial analysis."),
-        ("Measured impact", outcome, "5:00-7:00", consistency + " Walk through the paired chart and actual values. Distinguish quality, context count, and latency. Do not claim significance from three trials."),
-        ("Comparison with the paper", "Paper Table 1: GPT-4.1-mini F1 43.24/100. Table 6: retrieval sensitivity at k=1,3,5,10,20. Different model, categories, averaging, and code settings.", "7:00-8:20", "Show why a larger local F1 would not prove an improvement over the paper. Mention window/stride differences and that paper timing is per sample. We did not reproduce the 30x token claim."),
-        ("Debugging and inherited limitations", "Proxy/model downloads; LanceDB/Tantivy version mismatch; missing legacy config; keyword index covers only the first insertion batch.", "8:20-10:00", "Explain the version pin and category-5 config fix, applied to both conditions. Show that inherited keyword staleness is disclosed rather than silently mixing implementations. Mention the six passing checks."),
-        ("Conclusions and next steps", "The pipeline runs and the k modification is measurable. Broader claims need more conversations, category coverage, counterbalanced order, stable models, and usage logging.", "10:00-11:30", "Conclude with actual observed tradeoff, limits, and recommendations. Show the reproducible commands, raw evidence, and the published repository. Keep the recording under 15 minutes."),
+        ("Measured impact", outcome, "5:45-7:20", consistency + " Walk through the paired chart and actual values. Distinguish quality, context count, and latency. Do not claim significance from three trials."),
+        ("Comparison with the paper", "Paper Table 1: GPT-4.1-mini F1 43.24/100. Table 6: retrieval sensitivity at k=1,3,5,10,20. Different model, categories, averaging, and code settings.", "7:20-8:40", "Show why a larger local F1 would not prove an improvement over the paper. Mention window/stride differences and that paper timing is per sample. We did not reproduce the 30x token claim."),
+        ("Debugging and inherited limitations", "Proxy/model downloads; LanceDB/Tantivy version mismatch; missing legacy config; keyword index covers only the first insertion batch.", "8:40-10:20", "Explain the version pin and category-5 config fix, applied to both conditions. Show that inherited keyword staleness is disclosed rather than silently mixing implementations. Mention the six passing checks."),
+        ("Conclusions and next steps", "The pipeline runs and the k modification is measurable. Broader claims need more conversations, category coverage, counterbalanced order, stable models, and usage logging.", "10:20-11:50", "Conclude with actual observed tradeoff, limits, and recommendations. Show the reproducible commands, raw evidence, and the published repository. Keep the recording under 15 minutes."),
     ]
     slide_style = ParagraphStyle(name="SlideBody", fontName="Helvetica", fontSize=19, leading=27, spaceAfter=18)
     slide_title = ParagraphStyle(name="SlideTitle", fontName="Helvetica-Bold", fontSize=28, leading=34, spaceAfter=30)
     slides = []
-    notes = ["# Zoom presentation script (target 11.5 minutes)", "", "Record these slides in Zoom with your own narration. Repository: https://github.com/FreshbirdZhao/SimpleMem-Reproducibility", ""]
+    notes = ["# Zoom presentation script (target 12 minutes)", "", "Record these slides in Zoom with your own narration. Repository: https://github.com/FreshbirdZhao/SimpleMem-Reproducibility", ""]
     for index, (title, body, timing, note) in enumerate(slide_texts):
         if index:
             slides.append(PageBreak())
@@ -357,6 +357,27 @@ def main():
         if index == 4:
             slides.append(Image(str(output / "paired-results.png"), width=9 * inch, height=2.88 * inch))
         notes.extend([f"## Slide {index + 1}: {title} ({timing})", "", body, "", note, ""])
+        if index == 3:
+            notes.extend([
+                "## Demo: Evidence check (5:00-5:45)",
+                "",
+                "Before I show the results, let me verify the evidence chain behind them. Every number in this talk comes from six completed runs, three paired trials, and one hundred twenty question predictions.",
+                "",
+                "（操作：提前把终端开在项目根目录，字号调到 20pt 以上，先试跑一次再用 Cmd+K 清屏。讲完上面这句后按 Cmd+Tab 切到终端，回车运行下面这条命令。约 0.3 秒，不调用 API，不产生费用。）",
+                "",
+                "```bash",
+                ".venv/bin/python reproduction/validate_evidence.py reproduction/runs/recovered-20261113-060600-75832",
+                "```",
+                "",
+                "（操作：输出会停在屏幕上，显示 verified_predictions 120、verified_pairs 3、complete true 和八项检查。用鼠标指一下 JSON 的前三行，再指一下 checks 列表；不要打开 results.json 滚动。）",
+                "",
+                "The script independently recomputes token-level F1, re-sums the retrieval and answer timings, and verifies the dataset hash, the question order, the settings, the logs, the paired memory, and the stored memory digest. One hundred twenty predictions, three pairs, every check passes.",
+                "",
+                "So the numbers on the next slide are not hand-entered; they are computed from these validated files. Now, the measured impact.",
+                "",
+                "（操作：讲完立即 Cmd+Tab 回到 PDF，翻到第 5 页。整段演示控制在 45 秒内；如果终端出错，直接切回 PDF 说一句 “I will show a screenshot instead”，不要现场 debug。）",
+                "",
+            ])
     presentation = SimpleDocTemplate(str(output / "presentation.pdf"), pagesize=(960, 540), leftMargin=45, rightMargin=45, topMargin=35, bottomMargin=30)
     presentation.build(slides)
     slide_count = len(PdfReader(output / "presentation.pdf").pages)
