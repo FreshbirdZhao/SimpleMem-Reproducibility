@@ -1,3 +1,10 @@
+> **FTEC5660 Individual Project - reproducibility study.** This student copy of
+> [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) (base commit
+> `db80b6a`) adds a controlled retrieval-depth experiment on LoCoMo. Start with
+> [`reproduction/README.md`](reproduction/README.md) for setup, commands, results,
+> evidence and the 8-page [report](reproduction/submission/report.pdf). Upstream
+> documentation continues below unchanged.
+
 <div align="center">
 
 <img alt="simplemem_logo" src="https://github.com/user-attachments/assets/6ea54ad1-e007-442c-99d7-1174b10d1fec" width="450">
